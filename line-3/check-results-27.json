@@ -1,0 +1,403 @@
+{
+  "newToolTests": {
+    "command": "python3 -B -m unittest discover -s line-3/tools/settlement-freshness -p test_*.py -v",
+    "tests": 21,
+    "passed": 21,
+    "failures": 0,
+    "observed": "Executed during implementation; all 21 passed."
+  },
+  "inheritedTests": 83,
+  "commands": [
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "line-3/tools/settlement-check",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "test_absent_receipt (test_settlement.SettlementTests.test_absent_receipt) ... ok\ntest_bounded_empty_discovery (test_settlement.SettlementTests.test_bounded_empty_discovery) ... ok\ntest_discovery_uses_real_zto_filter (test_settlement.SettlementTests.test_discovery_uses_real_zto_filter) ... ok\ntest_finalized_success (test_settlement.SettlementTests.test_finalized_success) ... ok\ntest_inclusion_counts_as_one (test_settlement.SettlementTests.test_inclusion_counts_as_one) ... ok\ntest_invalid_receipt_status (test_settlement.SettlementTests.test_invalid_receipt_status) ... ok\ntest_no_write_rpc_method_available (test_settlement.SettlementTests.test_no_write_rpc_method_available) ... ok\ntest_quantity_and_hash_validation (test_settlement.SettlementTests.test_quantity_and_hash_validation) ... ok\ntest_receipt_ahead_of_sampled_head (test_settlement.SettlementTests.test_receipt_ahead_of_sampled_head) ... ok\ntest_removed_logs_not_discovered (test_settlement.SettlementTests.test_removed_logs_not_discovered) ... ok\ntest_reorg_and_orphan_fail_closed (test_settlement.SettlementTests.test_reorg_and_orphan_fail_closed) ... ok\ntest_revert_never_settles (test_settlement.SettlementTests.test_revert_never_settles) ... ok\ntest_unfinalized_policy (test_settlement.SettlementTests.test_unfinalized_policy) ... ok\ntest_unsupported_finality_is_unknown (test_settlement.SettlementTests.test_unsupported_finality_is_unknown) ... ok\ntest_wrong_returned_block_number (test_settlement.SettlementTests.test_wrong_returned_block_number) ... ok\ntest_wrong_transaction_and_chain (test_settlement.SettlementTests.test_wrong_transaction_and_chain) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.009s\n\nOK\n"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "line-3/tools/payment-witness",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "test_aggregate_and_net_outgoing (test_witness.WitnessTests.test_aggregate_and_net_outgoing) ... ok\ntest_duplicate_indices_refused (test_witness.WitnessTests.test_duplicate_indices_refused) ... ok\ntest_exact_threshold_and_shortfall (test_witness.WitnessTests.test_exact_threshold_and_shortfall) ... ok\ntest_invalid_policy (test_witness.WitnessTests.test_invalid_policy) ... ok\ntest_log_anchor_and_removed_flags (test_witness.WitnessTests.test_log_anchor_and_removed_flags) ... ok\ntest_no_file_outside_workspace (test_witness.WitnessTests.test_no_file_outside_workspace) ... ok\ntest_nonstandard_transfer_encoding (test_witness.WitnessTests.test_nonstandard_transfer_encoding) ... ok\ntest_pass_through_and_self_transfer_do_not_pay (test_witness.WitnessTests.test_pass_through_and_self_transfer_do_not_pay) ... ok\ntest_real_saved_evidence_replays_and_tampered_anchor_fails (test_witness.WitnessTests.test_real_saved_evidence_replays_and_tampered_anchor_fails) ... ok\ntest_reorg_between_settlement_and_payment (test_witness.WitnessTests.test_reorg_between_settlement_and_payment) ... ok\ntest_settlement_gates_payment (test_witness.WitnessTests.test_settlement_gates_payment) ... ok\ntest_transcript_mismatch_and_truncation (test_witness.WitnessTests.test_transcript_mismatch_and_truncation) ... ok\ntest_uint256_maximum_without_float (test_witness.WitnessTests.test_uint256_maximum_without_float) ... ok\ntest_wrong_recipient_and_token (test_witness.WitnessTests.test_wrong_recipient_and_token) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.002s\n\nOK\n"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "line-3/tools/provider-agreement",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "test_cli_refuses_replay_policy_override (test_agreement.AgreementTests.test_cli_refuses_replay_policy_override) ... ok\ntest_demo_replays_two_actual_sources (test_agreement.AgreementTests.test_demo_replays_two_actual_sources) ... ok\ntest_different_inclusion_chains_refused (test_agreement.AgreementTests.test_different_inclusion_chains_refused) ... ok\ntest_different_sampled_heads_are_allowed (test_agreement.AgreementTests.test_different_sampled_heads_are_allowed) ... ok\ntest_invalid_policy_precedes_reads (test_agreement.AgreementTests.test_invalid_policy_precedes_reads) ... ok\ntest_matching_inclusion_and_payment (test_agreement.AgreementTests.test_matching_inclusion_and_payment) ... ok\ntest_one_provider_failure_has_no_fallback (test_agreement.AgreementTests.test_one_provider_failure_has_no_fallback) ... ok\ntest_policy_shortfall_is_not_an_input_error (test_agreement.AgreementTests.test_policy_shortfall_is_not_an_input_error) ... ok\ntest_same_amount_different_events_refused (test_agreement.AgreementTests.test_same_amount_different_events_refused) ... ok\ntest_source_cardinality_and_version (test_agreement.AgreementTests.test_source_cardinality_and_version) ... ok\ntest_truncated_extra_and_reordered_reads (test_agreement.AgreementTests.test_truncated_extra_and_reordered_reads) ... ok\ntest_absolute_parent_hidden_and_empty_parts (test_agreement.FileBoundaryTests.test_absolute_parent_hidden_and_empty_parts) ... ok\ntest_ambiguous_json_refused (test_agreement.FileBoundaryTests.test_ambiguous_json_refused) ... ok\ntest_directory_and_fifo_refused_without_blocking (test_agreement.FileBoundaryTests.test_directory_and_fifo_refused_without_blocking) ... ok\ntest_leaf_and_directory_symlinks_refused (test_agreement.FileBoundaryTests.test_leaf_and_directory_symlinks_refused) ... ok\ntest_regular_and_bounded_actual_bytes (test_agreement.FileBoundaryTests.test_regular_and_bounded_actual_bytes) ... ok\ntest_replaced_directory_stays_on_open_descriptor (test_agreement.FileBoundaryTests.test_replaced_directory_stays_on_open_descriptor) ... ok\ntest_unsupported_platform_fails_closed (test_agreement.FileBoundaryTests.test_unsupported_platform_fails_closed) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 0.006s\n\nOK\n"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "line-3/tools/discovery-diagnostic",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "test_connection_reason_not_echoed (test_diagnose.DiagnosticTests.test_connection_reason_not_echoed) ... ok\ntest_discovery_reports_failed_range_without_selecting_hash (test_diagnose.DiagnosticTests.test_discovery_reports_failed_range_without_selecting_hash) ... ok\ntest_http_status_without_body_or_url (test_diagnose.DiagnosticTests.test_http_status_without_body_or_url) ... ok\ntest_invalid_lookback_has_no_reads (test_diagnose.DiagnosticTests.test_invalid_lookback_has_no_reads) ... ok\ntest_invalid_response_identifies_method (test_diagnose.DiagnosticTests.test_invalid_response_identifies_method) ... ok\ntest_malformed_error_fails_closed (test_diagnose.DiagnosticTests.test_malformed_error_fails_closed) ... ok\ntest_real_known_hash_replay_still_works (test_diagnose.DiagnosticTests.test_real_known_hash_replay_still_works) ... ok\ntest_rpc_code_and_bounded_message_no_data (test_diagnose.DiagnosticTests.test_rpc_code_and_bounded_message_no_data) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.077s\n\nOK\n"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "line-3/tools/payment-recheck",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "test_cli_demo_and_rejections (test_recheck.RecheckTests.test_cli_demo_and_rejections) ... ok\ntest_exact_transcript_requests_and_consumption (test_recheck.RecheckTests.test_exact_transcript_requests_and_consumption) ... ok\ntest_failed_provider_has_no_sample_or_fallback (test_recheck.RecheckTests.test_failed_provider_has_no_sample_or_fallback) ... ok\ntest_file_reader_and_transport_do_not_discover_environment (test_recheck.RecheckTests.test_file_reader_and_transport_do_not_discover_environment) ... ok\ntest_finality_loss_and_anchor_regressions (test_recheck.RecheckTests.test_finality_loss_and_anchor_regressions) ... ok\ntest_head_regressions (test_recheck.RecheckTests.test_head_regressions) ... ok\ntest_invalid_or_unaccepted_baseline_never_constructs_transport (test_recheck.RecheckTests.test_invalid_or_unaccepted_baseline_never_constructs_transport) ... ok\ntest_live_sample_replays_to_same_decision (test_recheck.RecheckTests.test_live_sample_replays_to_same_decision) ... ok\ntest_missing_receipt_revokes_reliance (test_recheck.RecheckTests.test_missing_receipt_revokes_reliance) ... ok\ntest_policy_changes_refused (test_recheck.RecheckTests.test_policy_changes_refused) ... ok\ntest_real_observations_advance_without_changing_payment (test_recheck.RecheckTests.test_real_observations_advance_without_changing_payment) ... ok\ntest_reincluded_payment_needs_review_even_when_policy_passes (test_recheck.RecheckTests.test_reincluded_payment_needs_review_even_when_policy_passes) ... ok\ntest_revert_and_unstable_chain (test_recheck.RecheckTests.test_revert_and_unstable_chain) ... ok\ntest_same_amount_changed_sender_needs_review (test_recheck.RecheckTests.test_same_amount_changed_sender_needs_review) ... ok\ntest_same_observation_does_not_count_as_recheck (test_recheck.RecheckTests.test_same_observation_does_not_count_as_recheck) ... ok\ntest_shortfall_rejects_and_event_order_is_normalized (test_recheck.RecheckTests.test_shortfall_rejects_and_event_order_is_normalized) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.022s\n\nOK\n"
+    },
+    {
+      "command": "rpc-boundary.BoundaryTests except actual_http_redirect_refused",
+      "exitCode": 0,
+      "stdout": "test_bad_encoding_json_and_nesting (boundary.BoundaryTests.test_bad_encoding_json_and_nesting) ... ok\ntest_duplicate_keys_including_nested (boundary.BoundaryTests.test_duplicate_keys_including_nested) ... ok\ntest_envelope_exclusive_result_error (boundary.BoundaryTests.test_envelope_exclusive_result_error) ... ok\ntest_exact_id_type (boundary.BoundaryTests.test_exact_id_type) ... ok\ntest_integer_id_and_null_result (boundary.BoundaryTests.test_integer_id_and_null_result) ... ok\ntest_no_proxy_discovery (boundary.BoundaryTests.test_no_proxy_discovery) ... ok\ntest_nonfinite_anywhere (boundary.BoundaryTests.test_nonfinite_anywhere) ... ok\ntest_public_reads_only (boundary.BoundaryTests.test_public_reads_only) ... ok\ntest_response_bound (boundary.BoundaryTests.test_response_bound) ... ok\ntest_sequence_and_headers (boundary.BoundaryTests.test_sequence_and_headers) ... ok\ntest_url_validation (boundary.BoundaryTests.test_url_validation) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.259s\n\nOK\n"
+    }
+  ],
+  "excludedTests": [
+    {
+      "name": "rpc-boundary.test_actual_http_redirect_refused",
+      "reason": "Starts an additional localhost HTTP endpoint; this assignment allows only its designated local RPC."
+    }
+  ],
+  "liveTrial": "line-3/tools/settlement-freshness/trial.json",
+  "authority": "Local check observations, not independent certification.",
+  "integrationChecks": [
+    {
+      "name": "historical_accept",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "line-3/tools/settlement-freshness/freshness.py",
+        "--replay",
+        "line-3/tools/settlement-freshness/live-evidence.json",
+        "--policy",
+        "line-3/tools/settlement-freshness/observed-policy.json",
+        "--max-head-age",
+        "120",
+        "--max-finalized-age",
+        "1200",
+        "--future-skew",
+        "30",
+        "--as-of",
+        "1792008919"
+      ],
+      "expectedExit": 0,
+      "exitCode": 0,
+      "result": {
+        "accepted": true,
+        "state": "within_time_budget",
+        "alerts": [],
+        "policy": {
+          "tx": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7",
+          "recipient": "0x2d30e495a15f2657d57c3e2caa08b06415c26cbf",
+          "minimum_raw": "166357571280020680094504",
+          "token": "ZTO",
+          "confirmations": 12,
+          "finalized": true
+        },
+        "timePolicy": {
+          "asOfUnix": 1792008919,
+          "maxHeadAgeSeconds": 120,
+          "maxFinalizedAgeSeconds": 1200,
+          "futureSkewSeconds": 30
+        },
+        "anchors": {
+          "head": {
+            "number": 26193067,
+            "hash": "0x2f918ae19c6e679c46ff568c9b17ec6683e5307f2e1bdf1b84edc4c2452173d9",
+            "timestampUnix": 1792008911,
+            "ageSeconds": 8,
+            "maxAgeSeconds": 120
+          },
+          "finalized": {
+            "number": 26192994,
+            "hash": "0xfa8fc721333bf246224d0392736eee7b84679257d5b39f19de8ac7dae82e90fb",
+            "timestampUnix": 1792008023,
+            "ageSeconds": 896,
+            "maxAgeSeconds": 1200
+          }
+        },
+        "payment": {
+          "accepted": true,
+          "state": "settled",
+          "head": {
+            "number": 26193067,
+            "hash": "0x2f918ae19c6e679c46ff568c9b17ec6683e5307f2e1bdf1b84edc4c2452173d9"
+          },
+          "inclusion": {
+            "number": 26190898,
+            "hash": "0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd"
+          },
+          "execution": "succeeded",
+          "confirmations": 2170,
+          "finalized": true,
+          "finalizedHead": {
+            "number": 26192994,
+            "hash": "0xfa8fc721333bf246224d0392736eee7b84679257d5b39f19de8ac7dae82e90fb"
+          },
+          "paymentState": "verified",
+          "transferEvidence": {
+            "incomingRaw": "166357571280020680094504",
+            "outgoingRaw": "0",
+            "netRaw": "166357571280020680094504",
+            "events": [
+              {
+                "from": "0x000000000004444c5dc75cb358380d2e3de08a90",
+                "to": "0x2d30e495a15f2657d57c3e2caa08b06415c26cbf",
+                "raw": "166357571280020680094504",
+                "logIndex": 632
+              }
+            ]
+          }
+        },
+        "sampleSha256": "cad5b8a1ef659bced5b3996b44f93e2bf1ffda99e6f20402996718206d39b356",
+        "evidenceMode": "offline historical evaluation at explicit time",
+        "evidenceLimit": "Provider-supplied block timestamps checked against caller-supplied time; neither is authenticated. This is not a consensus/receipt proof or a guarantee of current canonicality. Offline acceptance is only as of the supplied time."
+      }
+    },
+    {
+      "name": "stale_rejection",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "line-3/tools/settlement-freshness/freshness.py",
+        "--replay",
+        "line-3/tools/settlement-freshness/live-evidence.json",
+        "--policy",
+        "line-3/tools/settlement-freshness/observed-policy.json",
+        "--max-head-age",
+        "120",
+        "--max-finalized-age",
+        "1200",
+        "--future-skew",
+        "30",
+        "--as-of",
+        "1792010120"
+      ],
+      "expectedExit": 1,
+      "exitCode": 1,
+      "result": {
+        "accepted": false,
+        "state": "review_required",
+        "alerts": [
+          "head_too_old",
+          "finalized_too_old"
+        ],
+        "policy": {
+          "tx": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7",
+          "recipient": "0x2d30e495a15f2657d57c3e2caa08b06415c26cbf",
+          "minimum_raw": "166357571280020680094504",
+          "token": "ZTO",
+          "confirmations": 12,
+          "finalized": true
+        },
+        "timePolicy": {
+          "asOfUnix": 1792010120,
+          "maxHeadAgeSeconds": 120,
+          "maxFinalizedAgeSeconds": 1200,
+          "futureSkewSeconds": 30
+        },
+        "anchors": {
+          "head": {
+            "number": 26193067,
+            "hash": "0x2f918ae19c6e679c46ff568c9b17ec6683e5307f2e1bdf1b84edc4c2452173d9",
+            "timestampUnix": 1792008911,
+            "ageSeconds": 1209,
+            "maxAgeSeconds": 120
+          },
+          "finalized": {
+            "number": 26192994,
+            "hash": "0xfa8fc721333bf246224d0392736eee7b84679257d5b39f19de8ac7dae82e90fb",
+            "timestampUnix": 1792008023,
+            "ageSeconds": 2097,
+            "maxAgeSeconds": 1200
+          }
+        },
+        "payment": {
+          "accepted": true,
+          "state": "settled",
+          "head": {
+            "number": 26193067,
+            "hash": "0x2f918ae19c6e679c46ff568c9b17ec6683e5307f2e1bdf1b84edc4c2452173d9"
+          },
+          "inclusion": {
+            "number": 26190898,
+            "hash": "0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd"
+          },
+          "execution": "succeeded",
+          "confirmations": 2170,
+          "finalized": true,
+          "finalizedHead": {
+            "number": 26192994,
+            "hash": "0xfa8fc721333bf246224d0392736eee7b84679257d5b39f19de8ac7dae82e90fb"
+          },
+          "paymentState": "verified",
+          "transferEvidence": {
+            "incomingRaw": "166357571280020680094504",
+            "outgoingRaw": "0",
+            "netRaw": "166357571280020680094504",
+            "events": [
+              {
+                "from": "0x000000000004444c5dc75cb358380d2e3de08a90",
+                "to": "0x2d30e495a15f2657d57c3e2caa08b06415c26cbf",
+                "raw": "166357571280020680094504",
+                "logIndex": 632
+              }
+            ]
+          }
+        },
+        "sampleSha256": "cad5b8a1ef659bced5b3996b44f93e2bf1ffda99e6f20402996718206d39b356",
+        "evidenceMode": "offline historical evaluation at explicit time",
+        "evidenceLimit": "Provider-supplied block timestamps checked against caller-supplied time; neither is authenticated. This is not a consensus/receipt proof or a guarantee of current canonicality. Offline acceptance is only as of the supplied time."
+      }
+    },
+    {
+      "name": "clock_missing",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "line-3/tools/settlement-freshness/freshness.py",
+        "--replay",
+        "line-3/tools/settlement-freshness/live-evidence.json",
+        "--policy",
+        "line-3/tools/settlement-freshness/observed-policy.json",
+        "--max-head-age",
+        "120",
+        "--max-finalized-age",
+        "1200",
+        "--future-skew",
+        "30"
+      ],
+      "expectedExit": 2,
+      "exitCode": 2,
+      "result": {
+        "accepted": false,
+        "state": "input_error",
+        "reason": "Invalid time/policy input or inconsistent timestamp-bearing evidence"
+      }
+    },
+    {
+      "name": "detached_portable_demo",
+      "command": "Copied five dependency folders; imported freshness and ran --demo with RPC construction disabled",
+      "exitCode": 0,
+      "result": {
+        "accepted": true,
+        "state": "within_time_budget",
+        "alerts": [],
+        "policy": {
+          "tx": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7",
+          "recipient": "0x2d30e495a15f2657d57c3e2caa08b06415c26cbf",
+          "minimum_raw": "166357571280020680094504",
+          "token": "ZTO",
+          "confirmations": 12,
+          "finalized": true
+        },
+        "timePolicy": {
+          "asOfUnix": 1792008919,
+          "maxHeadAgeSeconds": 120,
+          "maxFinalizedAgeSeconds": 1200,
+          "futureSkewSeconds": 30
+        },
+        "anchors": {
+          "head": {
+            "number": 26193067,
+            "hash": "0x2f918ae19c6e679c46ff568c9b17ec6683e5307f2e1bdf1b84edc4c2452173d9",
+            "timestampUnix": 1792008911,
+            "ageSeconds": 8,
+            "maxAgeSeconds": 120
+          },
+          "finalized": {
+            "number": 26192994,
+            "hash": "0xfa8fc721333bf246224d0392736eee7b84679257d5b39f19de8ac7dae82e90fb",
+            "timestampUnix": 1792008023,
+            "ageSeconds": 896,
+            "maxAgeSeconds": 1200
+          }
+        },
+        "payment": {
+          "accepted": true,
+          "state": "settled",
+          "head": {
+            "number": 26193067,
+            "hash": "0x2f918ae19c6e679c46ff568c9b17ec6683e5307f2e1bdf1b84edc4c2452173d9"
+          },
+          "inclusion": {
+            "number": 26190898,
+            "hash": "0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd"
+          },
+          "execution": "succeeded",
+          "confirmations": 2170,
+          "finalized": true,
+          "finalizedHead": {
+            "number": 26192994,
+            "hash": "0xfa8fc721333bf246224d0392736eee7b84679257d5b39f19de8ac7dae82e90fb"
+          },
+          "paymentState": "verified",
+          "transferEvidence": {
+            "incomingRaw": "166357571280020680094504",
+            "outgoingRaw": "0",
+            "netRaw": "166357571280020680094504",
+            "events": [
+              {
+                "from": "0x000000000004444c5dc75cb358380d2e3de08a90",
+                "to": "0x2d30e495a15f2657d57c3e2caa08b06415c26cbf",
+                "raw": "166357571280020680094504",
+                "logIndex": 632
+              }
+            ]
+          }
+        },
+        "sampleSha256": "cad5b8a1ef659bced5b3996b44f93e2bf1ffda99e6f20402996718206d39b356",
+        "evidenceMode": "offline historical evaluation at explicit time",
+        "evidenceLimit": "Provider-supplied block timestamps checked against caller-supplied time; neither is authenticated. This is not a consensus/receipt proof or a guarantee of current canonicality. Offline acceptance is only as of the supplied time.",
+        "demoNote": "Historical ZTO trial, not today's freshness or an independently issued invoice."
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "tx": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7",
+  "recipient": "0x2d30e495a15f2657d57c3e2caa08b06415c26cbf",
+  "minimum_raw": "166357571280020680094504",
+  "token": "ZTO",
+  "confirmations": 12,
+  "finalized": true
+}

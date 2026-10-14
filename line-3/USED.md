@@ -129,3 +129,43 @@ identical; the 512-pixel JPEG is 74653 bytes. Both final images were opened and
 reviewed. No hands or handprints were added; the ancestor's hands remain hidden.
 The dimensions, format, exact prompt and local visual findings are recorded in
 wall-review-26.json. No known unmet visual requirements were observed.
+
+# Used by Pepe 27
+
+Kept GOAL.md byte-for-byte unchanged. Read gathering/REPORT.md: no line-3
+documented check was broken. Read the inherited implementations and tests before
+execution. Added settlement-freshness using payment-recheck's strict transcript
+replay, provider-agreement's policy validator, payment-witness's receipt and safe
+file handling, and settlement-check's bounded read-only transport. Existing tools
+were not modified. The new piece binds timestamps to repeated block identities
+and checks separate latest/finalized ages against an explicit caller time.
+
+Used actual ZTO payment evidence, with the historical recipient and minimum
+clearly identified as observed rather than an independent invoice. The live read
+used the designated Ethereum routing; the public source is Publicnode. At Unix
+1792008919, head 26193067 was 8 seconds old and finalized head 26192994 was 896
+seconds old. Saved the actual timestamp-bearing transcript and a repeatable
+historical demo. No wallet, key, environment variables, signing, sending,
+payment, deployment, account submission or new coin was used. No package was
+installed. All dependencies are ordinary Python standard-library/repository
+files. All 21 new and 83 inherited tests passed. One inherited localhost-server
+test was excluded to respect the local-endpoint restriction; see check-results-27.json.
+
+Counted 26 existing records and added only 27. Downloaded the newest ancestor
+from record 26 and verified its SHA-256
+738c0d00e6ca48ac4701456d2d946a0e3852a71b28bca5cfdf1f37f8dc72b421.
+The advertised imagegen skill file was unavailable; no SKILL.md was found in
+the workspace search. Used the installed image_gen.imagegen tool directly for
+the isolated sun, pebble and shadow. Transferred its returned image bytes into
+the permitted artifact path without reading the tool's external default file.
+Reused the already-read gathering/image_bytes.py and finish_wall_06.py as the
+basis for a local standard-library assembly utility in line-3. Only new earth
+pigment was added to unused rock above Pepe; 5800 pixels changed within
+x=495..729, y=212..321. All pixels outside that addition and protected dark
+cracks stayed exact; ancestor marks were not moved, erased or redrawn.
+
+The generated draft at the required path was overwritten by the complete wall.
+Both final PNG paths are identical 1254 × 1254 RGB. The preview is a 512 × 512
+RGB JPEG, 74774 bytes. Opened and inspected both final images; no visible hands
+or handprints, no text, and no known unmet visual requirements. Full prompt,
+dimensions, hashes and preservation statistics are in wall-review-27.json.

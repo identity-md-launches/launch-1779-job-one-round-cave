@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "recordNumber": 27,
+  "wallSha256": "783c575b9f9ae8f1ffcfd7a66eb3445beda4717564e659fb064c11626ad4dd3d",
+  "pngDimensions": [
+    1254,
+    1254
+  ],
+  "pngFormat": "RGB PNG",
+  "pngBytes": 4006055,
+  "pngAliasesIdentical": true,
+  "pngCRCAndDecodedLengthValid": true,
+  "jpegDimensions": [
+    512,
+    512
+  ],
+  "jpegFormat": "baseline RGB JPEG",
+  "jpegBytes": 74774,
+  "newRecordShapeValid": true,
+  "olderRecordsUnchanged": true,
+  "goalUnchanged": true,
+  "changedPathsWithinScope": true,
+  "noFilesOver100KOutsideArtifacts": true,
+  "namedPNGsUntracked": true,
+  "visualReviewFile": "line-3/wall-review-27.json",
+  "unmetVisualRequirements": [],
+  "note": "Local structural checks and review only; no independent certification."
+}

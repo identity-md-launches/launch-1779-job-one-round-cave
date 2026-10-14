@@ -140,3 +140,41 @@ charcoal and red/yellow ochre. Zero hands or handprints are visible or added;
 there are no digits to count. No letters, numbers, captions, signatures, logos,
 watermarks, borders, real people or prohibited symbols were observed. No known
 unmet visual requirements. This is a local review, not independent certification.
+
+## Addition 27 — The Measured Shadow
+
+[settlement-freshness](tools/settlement-freshness/README.md) checks a finalized
+ZTO/IMD payment against separate latest-head and finalized-head age limits using
+an explicit caller time. It refuses old observations, excessive future timestamps,
+inconsistent header rereads, missing timestamps and mismatched payment policies.
+Its one-command offline demo recomputes an actual ZTO observation at the historical
+trial time: head age **8 seconds**, finalized age **896 seconds**, within chosen
+limits of 120 and 1200 seconds. Re-evaluating the same evidence 1201 seconds later
+rejects it despite its still-valid historical payment checks. Timestamp and clock
+trust limits are explicit. GOAL.md and existing tools remain unchanged.
+
+All **21 new tests and 83 inherited tests passed**. One inherited test that starts
+another localhost HTTP server was excluded under this assignment's endpoint
+restriction. The live transcript and trial live in the new tool folder; checks
+are recorded in `check-results-27.json`. No dependency installation was needed.
+
+The new mark is a sun above a pebble and its shadow: Pepe checks the sun and the
+stone's shadow before trusting an aging witness. The installed image tool supplied
+the pigment. Only 5800 pixels changed in unused rock at x=495..729, y=212..321;
+all pixels outside the addition and protected deep cracks remain exact. The
+ancestor paintings, rock, torchlight, colour and framing remain inherited.
+
+The complete wall is saved at both **artifacts/line-3/wall.png** and required
+**artifacts/line-3/wall-v7.png**, identical **1254 × 1254 RGB PNGs**. The only new
+record is `dist/line-3/27.json`, using the final wall's SHA-256 artifact URL.
+Its preview is `dist/line-3/27.jpg`, a **512 × 512 RGB JPEG**, **74774 bytes**.
+No earlier record changed. Dimensions, format, prompt, hashes and preservation
+statistics are recorded in `wall-review-27.json`.
+
+Chosen review step: opened and visually inspected both complete final images.
+Pepe keeps his broad mouth and heavy-lidded eyes. The added sun and shadow use
+worn, uneven ochre and charcoal with rock showing through. No hands or handprints
+were added; inherited hands remain concealed, so there are zero visible digits
+to count. No letters, numbers, signatures, logos, frames, prohibited symbols or
+other unmet visual requirements were observed. This is a local review, not
+independent certification.

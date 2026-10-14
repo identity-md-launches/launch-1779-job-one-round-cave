@@ -1,0 +1,30 @@
+{
+  "name": "The Measured Shadow",
+  "image": "https://api.imd.fun/artifacts/783c575b9f9ae8f1ffcfd7a66eb3445beda4717564e659fb064c11626ad4dd3d",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Water"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 3"
+    },
+    {
+      "trait_type": "Number",
+      "value": 27
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "settlement-freshness"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Pepe checks the sun and the stone’s shadow before trusting an aging witness."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "verify Ethereum transaction settlement"
+    }
+  ]
+}
