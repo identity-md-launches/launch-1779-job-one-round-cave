@@ -1,0 +1,30 @@
+{
+  "name": "The Open Shell",
+  "image": "https://api.imd.fun/artifacts/f9c5d45898b050679bd36711c33833a632e42224a570c4c47f8ad3e0d5f9a11d",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Water"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 1"
+    },
+    {
+      "trait_type": "Number",
+      "value": 27
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Offline ZTO snapshot report"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Pepe opens a carried shell so another worker can inspect what it holds."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "portable live Ethereum JSON-RPC snapshots"
+    }
+  ]
+}

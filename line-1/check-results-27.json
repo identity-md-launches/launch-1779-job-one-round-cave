@@ -1,0 +1,30 @@
+{
+  "checks": [
+    {
+      "command": "python3 -B line-1/tools/snapshot-report/test_report.py",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.069s\n\nOK\n"
+    },
+    {
+      "command": "python3 -B line-1/tools/hash-pinned-zto/test_pinned.py",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_bad_supply_and_decimals (__main__.PinnedTests.test_bad_supply_and_decimals) ... ok\ntest_both_checksum_layers (__main__.PinnedTests.test_both_checksum_layers) ... ok\ntest_capture_requests_exact_hash (__main__.PinnedTests.test_capture_requests_exact_hash) ... ok\ntest_changed_rechecked_hash (__main__.PinnedTests.test_changed_rechecked_hash) ... ok\ntest_error_envelope_and_bool_id (__main__.PinnedTests.test_error_envelope_and_bool_id) ... ok\ntest_file_and_cli_integration (__main__.PinnedTests.test_file_and_cli_integration) ... ok\ntest_invalid_hash_and_block_quantity (__main__.PinnedTests.test_invalid_hash_and_block_quantity) ... ok\ntest_invalid_timeout (__main__.PinnedTests.test_invalid_timeout) ... ok\ntest_mixed_hash_and_number_refused (__main__.PinnedTests.test_mixed_hash_and_number_refused) ... ok\ntest_no_latest_downgrade (__main__.PinnedTests.test_no_latest_downgrade) ... ok\ntest_no_number_downgrade (__main__.PinnedTests.test_no_number_downgrade) ... ok\ntest_non_finalized_anchor (__main__.PinnedTests.test_non_finalized_anchor) ... ok\ntest_parser_rejects_duplicate_keys_and_nonfinite (__main__.PinnedTests.test_parser_rejects_duplicate_keys_and_nonfinite) ... ok\ntest_read_order_and_missing_read (__main__.PinnedTests.test_read_order_and_missing_read) ... ok\ntest_real_offline_replay (__main__.PinnedTests.test_real_offline_replay) ... ok\ntest_require_canonical_exact_boolean (__main__.PinnedTests.test_require_canonical_exact_boolean) ... ok\ntest_require_canonical_mandatory (__main__.PinnedTests.test_require_canonical_mandatory) ... ok\ntest_rpc_failure_never_downgrades (__main__.PinnedTests.test_rpc_failure_never_downgrades) ... ok\ntest_send_sign_and_other_methods_refused (__main__.PinnedTests.test_send_sign_and_other_methods_refused) ... ok\ntest_transport_bounds_and_headers (__main__.PinnedTests.test_transport_bounds_and_headers) ... ok\ntest_uint8_precision_rendering_without_float (__main__.PinnedTests.test_uint8_precision_rendering_without_float) ... ok\ntest_unknown_fields_source_and_timestamp (__main__.PinnedTests.test_unknown_fields_source_and_timestamp) ... ok\ntest_wrong_chain (__main__.PinnedTests.test_wrong_chain) ... ok\ntest_wrong_real_hash_rejected_even_resealed (__main__.PinnedTests.test_wrong_real_hash_rejected_even_resealed) ... ok\ntest_wrong_recheck_height (__main__.PinnedTests.test_wrong_recheck_height) ... ok\ntest_wrong_selector_and_call_fields (__main__.PinnedTests.test_wrong_selector_and_call_fields) ... ok\ntest_wrong_token_rejected (__main__.PinnedTests.test_wrong_token_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 27 tests in 0.162s\n\nOK\n"
+    },
+    {
+      "command": "README offline demo command",
+      "exit_code": 0,
+      "bytes": 52563,
+      "matches_saved_example": true
+    },
+    {
+      "structural": "goal unchanged byte-for-byte; old records unchanged; size limits; wall aliases identical; record hash; image codec provenance",
+      "passed": true
+    }
+  ],
+  "new_tests": 10,
+  "inherited_tests": 27,
+  "network": "No new chain capture; real ancestor evidence replayed offline.",
+  "limitations": "Local tests and visual review, not independent certification."
+}

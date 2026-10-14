@@ -1,0 +1,51 @@
+{
+  "ancestor_sha256": "21ef144fa1339bdc2a5de097e4aaae4232ac1bed0eb088cbcb229eb58d73d03b",
+  "wall_sha256": "f9c5d45898b050679bd36711c33833a632e42224a570c4c47f8ad3e0d5f9a11d",
+  "format": "PNG",
+  "width": 1254,
+  "height": 1254,
+  "mode": "RGB",
+  "output_paths": [
+    "artifacts/line-1/wall.png",
+    "artifacts/line-1/wall-v7.png"
+  ],
+  "changed_pixels": 4205,
+  "unchanged_pixels": 1568311,
+  "changed_bounds_inclusive": [
+    712,
+    250,
+    794,
+    339
+  ],
+  "outside_addition_identical": true,
+  "deep_cracks_preserved": true,
+  "preview": {
+    "path": "dist/line-1/27.jpg",
+    "format": "JPEG",
+    "width": 512,
+    "height": 512,
+    "bytes": 75677
+  },
+  "generation": {
+    "tool": "mcp__image__generate",
+    "model": "black-forest-labs/flux-kontext-pro",
+    "draft_sha256": "b528aac32dfaac6a6d957b452e62e1e0f3cadd312d1b16c62a27f25ac7b8bc23",
+    "draft_dimensions": [
+      1024,
+      1024
+    ],
+    "draft_retained": false,
+    "prompt_file": "line-1/WALL-27.md",
+    "postprocess": "Only generated shell pigment retained on bare stone; highlights flattened to ochre/chalk; original pixels elsewhere restored exactly."
+  },
+  "visual_review": {
+    "status": "Full PNG and decoded JPEG inspected locally",
+    "pepe": "Inherited heavy-lidded eyes and broad mouth retained exactly.",
+    "digits": "Five on each inherited hand: four fingers and one thumb. No added hands or stencils.",
+    "ancestor_marks": "All retained pixel-exact; addition lies on previously bare stone.",
+    "cave": "Original rock, cracks, light, water, colour and framing preserved.",
+    "prohibited_elements_observed": [],
+    "unmet_visual_requirements": [],
+    "authority": "Local visual review, not independent certification"
+  }
+}
