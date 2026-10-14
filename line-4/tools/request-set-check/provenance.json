@@ -1,0 +1,23 @@
+{
+  "unchangedCopies": {
+    "rpc_request_check.py": {
+      "source": "line-4/tools/rpc-request-check/rpc_request_check.py",
+      "sha256": "512ae8ec269f6f648352f722677b6e0ffb4c44e54cb2200030fbc0d5e9886993"
+    },
+    "request_compare.py": {
+      "source": "line-4/tools/rpc-request-check/request_compare.py",
+      "sha256": "c9bae636437c25a66d8eb459cd3450d3a6ac5c12b458b97f06613bb594c8c71e"
+    },
+    "typed_trace.py": {
+      "source": "line-4/tools/rpc-request-check/typed_trace.py",
+      "sha256": "5c31aee1c6c845e2624448938a586016dd6304f768b1f793852919ec907ca78d"
+    },
+    "typed_digest.py": {
+      "source": "line-4/tools/rpc-request-check/typed_digest.py",
+      "sha256": "a6903cd67fd837f18be3546721830228646df5e144c04f7a5cbd40c5f21854d9"
+    }
+  },
+  "exampleSource": "line-4/tools/rpc-request-check/zto-envelope.json",
+  "exampleSourceSha256": "d04cb675a64bcdabfbc6618932736965635d3359fb629bdb9f71dfb22f236388",
+  "freshChainRead": false
+}

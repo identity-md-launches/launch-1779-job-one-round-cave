@@ -1,0 +1,33 @@
+{
+  "tests": {
+    "command": "python3 -B -m unittest discover -s line-4/tools/request-set-check -v",
+    "count": 22,
+    "exitCode": 0,
+    "result": "OK",
+    "scratchSymlinkTrial": true
+  },
+  "cliAcceptance": {
+    "exitCode": 0,
+    "accepted": true,
+    "digest": "0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774"
+  },
+  "cliOmission": {
+    "exitCode": 1,
+    "accepted": false,
+    "missing": [
+      "zto-receipt-review"
+    ]
+  },
+  "portableTrial": {
+    "workingDirectory": "test/scratch/request-set-portable",
+    "command": "python3 -B request_set_check.py zto-set.json zto-set.json --summary",
+    "exitCode": 0,
+    "accepted": true,
+    "siblingModulesRequired": false
+  },
+  "imageInspection": {
+    "wall": "valid PNG 1254x1254",
+    "preview": "valid JPEG 512x512"
+  },
+  "localChecksOnly": true
+}

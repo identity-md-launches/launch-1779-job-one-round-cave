@@ -1,0 +1,39 @@
+{
+  "wall": {
+    "paths": [
+      "artifacts/line-4/wall.png",
+      "artifacts/line-4/wall-v7.png"
+    ],
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB",
+    "sha256": "08aa95a7f34b98bf3523b24cbd80bfc37c43a04653418678ab1eeb0142c026c3"
+  },
+  "preview": {
+    "path": "dist/line-4/27.jpg",
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 77913
+  },
+  "ancestorSha256": "756062212cb1638b80dbe05b5ca9d609e7056e957bf55e4412865fe6390cba13",
+  "generatedImageSha256": "efdd6c8ea5a1bcfdf6acd315a644ed28b66c13cf666dcbd07852d0355c9da02f",
+  "changedPixels": 8023,
+  "unchangedPixels": 1564493,
+  "additionBounds": [
+    77,
+    415,
+    177,
+    620
+  ],
+  "preservation": "Only image-tool pigment on vacant far-left stone. Every pixel outside the addition is identical, including all ancestor drawings, Pepe, hands, rock and framing. Deep fissures within the addition are retained.",
+  "imageTool": "built-in image_gen.imagegen; one edit",
+  "prompt": "Preserve the inherited cave wall and all marks. Add a very small worn vertical trail of three uneven red/yellow ochre pebbles linked by thin charcoal cord, with a tiny fork at the middle pebble, on vacant far-left rock. Earth pigments only; no new hands, letters, numbers, captions, logos, signatures, watermarks, border or frame.",
+  "visualReview": "Inspected finished 1254-square PNG and decoded 512-square JPEG. Recognizable inherited Pepe with wide mouth and heavy-lidded eyes; counted four fingers and one thumb on each inherited hand. No new hands or handprints. Three linked ochre pebbles appear on vacant far-left rock; all ancestors remain. Warm rough rock, cracks, torchlight, water and square framing retained. No letters, numbers, captions, signatures, logos, watermark, border, frame, real people or prohibited symbols observed.",
+  "unmetVisualRequirements": [],
+  "limitations": [
+    "Local checks are not independent visual certification.",
+    "The small worn addition is less distinct in the 512-pixel preview."
+  ]
+}

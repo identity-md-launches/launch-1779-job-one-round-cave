@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "number": 27,
+  "wall": {
+    "path": "artifacts/line-4/wall-v7.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "sha256": "08aa95a7f34b98bf3523b24cbd80bfc37c43a04653418678ab1eeb0142c026c3"
+  },
+  "preview": {
+    "path": "dist/line-4/27.jpg",
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 77913
+  },
+  "ancestorChangedPixels": 8023,
+  "ancestorUnchangedPixels": 1564493,
+  "outsideAdditionIdentical": true,
+  "deepFissuresRetained": true,
+  "goalUnchanged": true,
+  "olderRecordsUnchanged": 26,
+  "standaloneSourceCopiesVerified": true,
+  "scopeCheck": true,
+  "sizeLimitCheck": true,
+  "wallOutputsUntracked": true,
+  "diffCheck": true,
+  "unmetVisualRequirements": [],
+  "localChecksOnly": true
+}

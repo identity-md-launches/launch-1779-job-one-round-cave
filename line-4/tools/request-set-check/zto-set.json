@@ -1,0 +1,14 @@
+{
+  "requests": [
+    {
+      "reviewId": "zto-receipt-review",
+      "request": {
+        "method": "eth_signTypedData_v4",
+        "params": [
+          "0x2d30e495a15f2657d57c3e2caa08b06415c26cbf",
+          "{\"types\":{\"EIP712Domain\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"version\",\"type\":\"string\"},{\"name\":\"chainId\",\"type\":\"uint256\"}],\"PaymentEvidence\":[{\"name\":\"transactionHash\",\"type\":\"bytes32\"},{\"name\":\"token\",\"type\":\"address\"},{\"name\":\"recipient\",\"type\":\"address\"},{\"name\":\"minimumRaw\",\"type\":\"uint256\"},{\"name\":\"confirmations\",\"type\":\"uint256\"},{\"name\":\"requireFinalized\",\"type\":\"bool\"},{\"name\":\"transcriptHash\",\"type\":\"bytes32\"}]},\"primaryType\":\"PaymentEvidence\",\"domain\":{\"name\":\"Read-only Payment Evidence\",\"version\":\"1\",\"chainId\":1},\"message\":{\"transactionHash\":\"0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7\",\"token\":\"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\"recipient\":\"0x2d30e495a15f2657d57c3e2caa08b06415c26cbf\",\"minimumRaw\":\"166357571280020680094504\",\"confirmations\":12,\"requireFinalized\":true,\"transcriptHash\":\"0x941c08f97e2d22a8189d2f4a6802bbb283d610ae6527a9f1a323ae6751f996c1\"}}"
+        ]
+      }
+    }
+  ]
+}

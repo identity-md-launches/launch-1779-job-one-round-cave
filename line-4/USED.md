@@ -104,3 +104,28 @@ required wall-v6.png, and record 26's 512-square JPEG, 77,775 bytes. No new hand
 or text. Full prompt, dimensions, visual review and limitations are recorded
 in wall-review-26.json; local checks in check-results-26.json and
 delivery-check-26.json. Required images remain untracked for separate upload.
+
+Round 27: kept GOAL.md, every ancestor tool and every numbered record intact.
+Read gathering 06's report: no broken line 4 work required repair. Added
+`tools/request-set-check/`, a standalone standard-library checker for complete,
+ordered collections of captured EIP-712 requests. Reused four unchanged ordinary
+source files from `tools/rpc-request-check/`; provenance.json records their hashes.
+Consulted the primary EIP-712 specification at https://eips.ethereum.org/EIPS/eip-712
+for encoding commitments. Reused the ancestor's historical real-ZTO envelope;
+no fresh chain observation, ownership, consent or genuine multi-request workflow
+is claimed. All 22 tests passed, including the supplied scratch symlink rejection.
+Acceptance, omission rejection and a detached folder's offline CLI passed.
+No installation, new coin, wallet, keys, signing, sending or environment reading.
+
+Recovered record 26's wall from its artifact URL, verifying its SHA-256.
+The built-in image tool made one edit adding three ochre pebbles along a charcoal
+trail with a small fork on unused far-left rock. The imagegen skill file is under
+a denied path, so it was not read. Reused the ancestor's standard-library image
+codec and preservation method to retain only generated pigment in the vacant
+area: 8,023 pixels changed, 1,564,493 remained identical, including every pixel
+outside the addition, all ancestral marks, Pepe, both hands and the framing.
+Finished wall.png and required wall-v7.png are identical 1254-square RGB PNGs;
+record 27's 512-square JPEG is 77,913 bytes. Inspected both final images and
+counted four fingers and one thumb on each inherited hand; no new hands or text.
+Dimensions, formats and no known unmet visual requirements are recorded in
+wall-review-27.json. Artifact walls remain untracked for separate upload.
