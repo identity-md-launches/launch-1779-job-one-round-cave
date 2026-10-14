@@ -1,0 +1,101 @@
+{
+  "accepted": true,
+  "state": "within_time_budget",
+  "alerts": [],
+  "policy": {
+    "tx": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7",
+    "recipient": "0x2d30e495a15f2657d57c3e2caa08b06415c26cbf",
+    "minimum_raw": "166357571280020680094504",
+    "token": "ZTO",
+    "confirmations": 12,
+    "finalized": true
+  },
+  "timePolicy": {
+    "asOfUnix": 1792008919,
+    "maxHeadAgeSeconds": 120,
+    "maxFinalizedAgeSeconds": 1200,
+    "futureSkewSeconds": 30
+  },
+  "anchors": {
+    "head": {
+      "number": 26193067,
+      "hash": "0x2f918ae19c6e679c46ff568c9b17ec6683e5307f2e1bdf1b84edc4c2452173d9",
+      "timestampUnix": 1792008911,
+      "ageSeconds": 8,
+      "maxAgeSeconds": 120
+    },
+    "finalized": {
+      "number": 26192994,
+      "hash": "0xfa8fc721333bf246224d0392736eee7b84679257d5b39f19de8ac7dae82e90fb",
+      "timestampUnix": 1792008023,
+      "ageSeconds": 896,
+      "maxAgeSeconds": 1200
+    }
+  },
+  "payment": {
+    "accepted": true,
+    "state": "settled",
+    "head": {
+      "number": 26193067,
+      "hash": "0x2f918ae19c6e679c46ff568c9b17ec6683e5307f2e1bdf1b84edc4c2452173d9"
+    },
+    "inclusion": {
+      "number": 26190898,
+      "hash": "0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd"
+    },
+    "execution": "succeeded",
+    "confirmations": 2170,
+    "finalized": true,
+    "finalizedHead": {
+      "number": 26192994,
+      "hash": "0xfa8fc721333bf246224d0392736eee7b84679257d5b39f19de8ac7dae82e90fb"
+    },
+    "paymentState": "verified",
+    "transferEvidence": {
+      "incomingRaw": "166357571280020680094504",
+      "outgoingRaw": "0",
+      "netRaw": "166357571280020680094504",
+      "events": [
+        {
+          "from": "0x000000000004444c5dc75cb358380d2e3de08a90",
+          "to": "0x2d30e495a15f2657d57c3e2caa08b06415c26cbf",
+          "raw": "166357571280020680094504",
+          "logIndex": 632
+        }
+      ]
+    }
+  },
+  "sampleSha256": "cad5b8a1ef659bced5b3996b44f93e2bf1ffda99e6f20402996718206d39b356",
+  "evidenceMode": "offline historical evaluation at explicit time",
+  "evidenceLimit": "Provider-supplied block timestamps checked against caller-supplied time; neither is authenticated. This is not a consensus/receipt proof or a guarantee of current canonicality. Offline acceptance is only as of the supplied time.",
+  "policyExplanation": {
+    "valid": true,
+    "error_count": 0,
+    "errors": [],
+    "sources": {
+      "contract": {
+        "file": "shared/payment-evidence/policy.contract.json",
+        "bytes": 705,
+        "sha256": "9a8fb8297b152df3532caabf62af9c3ea316e5f51fbdbd96dbb0950a09dca47b"
+      },
+      "document": {
+        "file": "shared/payment-evidence/example.timed-policy.json",
+        "bytes": 249,
+        "sha256": "37097100e7aa7b44f1686174ecfe30a6e9fef01abb96091a2df953492b526818"
+      }
+    },
+    "coordinates": {
+      "lines": "one-based; LF begins each new line",
+      "columns": "one-based Unicode code points, not display cells or UTF-16 units",
+      "offsets": "zero-based; ranges include start and exclude end",
+      "encoding": "UTF-8; source bytes and CRLF are preserved"
+    }
+  },
+  "evidenceEvaluated": true,
+  "transcriptFile": {
+    "file": "shared/payment-evidence/example.timed-transcript.json",
+    "bytes": 11519,
+    "sha256": "e65016b648b42f0a0a27bacb222a5e81551c81fcce7cc771242b4b1503cd5e08"
+  },
+  "providerAgreement": "Single saved observation; no independent-provider agreement is established."
+}

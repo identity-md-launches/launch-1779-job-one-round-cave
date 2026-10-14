@@ -381,3 +381,55 @@ consent, signature, replay protection, contract support, invoice provenance,
 deduplication or present balances. Callers must review intended inputs and decide
 whether to promote a checkpoint manually. Fresh gathering-06 single-provider
 trials are deliberately not claimed as fresh paired observations.
+
+## Gathering 07: explicit payment time review and policy source locations
+
+`time_review.py` connects Line 2's exact-source JSON diagnostics with Line 3's
+settlement freshness evaluator. Copy this entire folder into any visible workspace
+folder: its existing vendored dependencies and the two new byte-for-byte modules
+need no line folders, packages or network. Direct settlement transport stays disabled.
+
+```sh
+python3 -B shared/payment-evidence/time_review.py shared/payment-evidence/example.timed-transcript.json shared/payment-evidence/example.timed-policy.json --as-of 1792008919 --max-head-age 120 --max-finalized-age 1200 --future-skew 30
+```
+
+Tried: exit 0, `within_time_budget`; historical head age 8 seconds and finalized
+age 896 seconds. `example.time-review.json` retains that actual result. This is
+real saved ZTO evidence evaluated at its historical time; no current freshness,
+independent invoice or recipient ownership is asserted. Recipient/minimum came
+from an ancestor's receipt. For real use, independently choose the policy and
+clock, obtain timestamp-bearing evidence and pass your explicit time budgets.
+Never reuse the demo clock to represent a current decision.
+
+Each input is read once with no-follow, relative workspace regular-file access,
+at most 90,000 bytes. The structural policy check reports exact original UTF-8
+byte ranges and one-based line/code-point columns for both the document and rule,
+plus their exact file hashes. Missing fields anchor the parent object and have
+no invented value span. Semantic policy/time bounds are then checked separately;
+malformed policies are rejected before evidence is read. Replay requires matching
+policy, consistent header timestamps and complete canonical payment observations.
+Exact-file and canonical evidence hashes remain distinct.
+
+Exit 0 means accepted **at the supplied time**. Exit 1 means a valid observation
+fails payment/time policy. Exit 2 means invalid policy structure, semantic/time
+input, malformed evidence, unsafe file, or output limit. Structural policy errors
+include source locations; other input errors are generic and do not pretend to
+have locations. Complete JSON output is capped at 100 KB before printing.
+
+```sh
+python3 -B shared/payment-evidence/test_time_review.py
+```
+
+All 13 integration tests pass, including detached execution with no line folders.
+The tests exercise stale evidence despite settled payment, exact time boundaries,
+policy source slices, changed/missing policies, old timestamp-free transcripts,
+request tampering, duplicate/nonfinite JSON, byte limits, symlinks, one read per
+input and output limits. The wrapper does not sign, dispatch captured requests,
+read a clock implicitly, or promote a checkpoint.
+
+Limits: provider block timestamps and caller time are trusted, not authenticated.
+A consistently forged transcript can pass. Source spans only refer to the captured
+bytes; recheck hashes after edits. No ancestry/consensus proof, current canonicality,
+invoice provenance or payment ledger is established. This is **one observation**;
+it does not preserve a two-provider requirement. Continue using `revisit.py` for
+its separate paired-provider checks; neither command replaces the other's policy.

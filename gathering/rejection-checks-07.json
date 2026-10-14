@@ -1,0 +1,112 @@
+[
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-1/tools/snapshot-report/report.py",
+      "line-1/tools/bounded-rpc-snapshot/sample-zto-supply.json"
+    ],
+    "expectedExitCode": 1,
+    "exitCode": 1,
+    "passed": true,
+    "stdout": "",
+    "stderr": "snapshot-report: bundle fields differ from schema\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-2/tools/source-locator/locate.py",
+      "line-2/tools/json-contract/report.contract.json",
+      "line-2/tools/rule-locator/report.invalid.json"
+    ],
+    "expectedExitCode": 1,
+    "exitCode": 1,
+    "passed": true,
+    "stdout": "{\n  \"valid\": false,\n  \"error_count\": 3,\n  \"errors\": [\n    {\n      \"path\": \"/checks/0/passed\",\n      \"rule\": \"type\",\n      \"message\": \"expected boolean\",\n      \"contract_path\": \"/properties/checks/items/properties/passed/type\",\n      \"constraint\": {\n        \"present\": true,\n        \"type\": \"string\",\n        \"length\": 7,\n        \"preview\": \"\\\"boolean\\\"\",\n        \"truncated\": false\n      },\n      \"observed\": {\n        \"present\": true,\n        \"type\": \"string\",\n        \"length\": 3,\n        \"preview\": \"\\\"yes\\\"\",\n        \"truncated\": false\n      },\n      \"document_source\": {\n        \"file\": \"line-2/tools/rule-locator/report.invalid.json\",\n        \"present\": true,\n        \"value\": {\n          \"start\": {\n            \"line\": 4,\n            \"column\": 44,\n            \"char_offset\": 92,\n            \"byte_offset\": 92\n          },\n          \"end\": {\n            \"line\": 4,\n            \"column\": 49,\n            \"char_offset\": 97,\n            \"byte_offset\": 97\n          }\n        },\n        \"key\": {\n          \"start\": {\n            \"line\": 4,\n            \"column\": 34,\n            \"char_offset\": 82,\n            \"byte_offset\": 82\n          },\n          \"end\": {\n            \"line\": 4,\n            \"column\": 42,\n            \"char_offset\": 90,\n            \"byte_offset\": 90\n          }\n        }\n      },\n      \"contract_source\": {\n        \"file\": \"line-2/tools/json-contract/report.contract.json\",\n        \"present\": true,\n        \"value\": {\n          \"start\": {\n            \"line\": 17,\n            \"column\": 30,\n            \"char_offset\": 525,\n            \"byte_offset\": 525\n          },\n          \"end\": {\n            \"line\": 17,\n            \"column\": 39,\n            \"char_offset\": 534,\n            \"byte_offset\": 534\n          }\n        },\n        \"key\": {\n          \"start\": {\n            \"line\": 17,\n            \"column\": 22,\n            \"char_offset\": 517,\n            \"byte_offset\": 517\n          },\n          \"end\": {\n            \"line\": 17,\n            \"column\": 28,\n            \"char_offset\": 523,\n            \"byte_offset\": 523\n          }\n        }\n      }\n    },\n    {\n      \"path\": \"/checks/0/seconds\",\n      \"rule\": \"minimum\",\n      \"message\": \"must respect minimum 0\",\n      \"contract_path\": \"/properties/checks/items/properties/seconds/minimum\",\n      \"constraint\": {\n        \"present\": true,\n        \"type\": \"integer\",\n        \"preview\": \"0\",\n        \"truncated\": false\n      },\n      \"observed\": {\n        \"present\": true,\n        \"type\": \"integer\",\n        \"preview\": \"-1\",\n        \"truncated\": false\n      },\n      \"document_source\": {\n        \"file\": \"line-2/tools/rule-locator/report.invalid.json\",\n        \"present\": true,\n        \"value\": {\n          \"start\": {\n            \"line\": 4,\n            \"column\": 62,\n            \"char_offset\": 110,\n            \"byte_offset\": 110\n          },\n          \"end\": {\n            \"line\": 4,\n            \"column\": 64,\n            \"char_offset\": 112,\n            \"byte_offset\": 112\n          }\n        },\n        \"key\": {\n          \"start\": {\n            \"line\": 4,\n            \"column\": 51,\n            \"char_offset\": 99,\n            \"byte_offset\": 99\n          },\n          \"end\": {\n            \"line\": 4,\n            \"column\": 60,\n            \"char_offset\": 108,\n            \"byte_offset\": 108\n          }\n        }\n      },\n      \"contract_source\": {\n        \"file\": \"line-2/tools/json-contract/report.contract.json\",\n        \"present\": true,\n        \"value\": {\n          \"start\": {\n            \"line\": 18,\n            \"column\": 52,\n            \"char_offset\": 588,\n            \"byte_offset\": 588\n          },\n          \"end\": {\n            \"line\": 18,\n            \"column\": 53,\n            \"char_offset\": 589,\n            \"byte_offset\": 589\n          }\n        },\n        \"key\": {\n          \"start\": {\n            \"line\": 18,\n            \"column\": 41,\n            \"char_offset\": 577,\n            \"byte_offset\": 577\n          },\n          \"end\": {\n            \"line\": 18,\n            \"column\": 50,\n            \"char_offset\": 586,\n            \"byte_offset\": 586\n          }\n        }\n      }\n    },\n    {\n      \"path\": \"/unexpected\",\n      \"rule\": \"additionalProperties\",\n      \"message\": \"unexpected property\",\n      \"contract_path\": \"/additionalProperties\",\n      \"constraint\": {\n        \"present\": true,\n        \"type\": \"boolean\",\n        \"preview\": \"false\",\n        \"truncated\": false\n      },\n      \"observed\": {\n        \"present\": true,\n        \"type\": \"null\",\n        \"preview\": \"null\",\n        \"truncated\": false\n      },\n      \"document_source\": {\n        \"file\": \"line-2/tools/rule-locator/report.invalid.json\",\n        \"present\": true,\n        \"value\": {\n          \"start\": {\n            \"line\": 5,\n            \"column\": 17,\n            \"char_offset\": 132,\n            \"byte_offset\": 132\n          },\n          \"end\": {\n            \"line\": 5,\n            \"column\": 21,\n            \"char_offset\": 136,\n            \"byte_offset\": 136\n          }\n        },\n        \"key\": {\n          \"start\": {\n            \"line\": 5,\n            \"column\": 3,\n            \"char_offset\": 118,\n            \"byte_offset\": 118\n          },\n          \"end\": {\n            \"line\": 5,\n            \"column\": 15,\n            \"char_offset\": 130,\n            \"byte_offset\": 130\n          }\n        }\n      },\n      \"contract_source\": {\n        \"file\": \"line-2/tools/json-contract/report.contract.json\",\n        \"present\": true,\n        \"value\": {\n          \"start\": {\n            \"line\": 4,\n            \"column\": 27,\n            \"char_offset\": 92,\n            \"byte_offset\": 92\n          },\n          \"end\": {\n            \"line\": 4,\n            \"column\": 32,\n            \"char_offset\": 97,\n            \"byte_offset\": 97\n          }\n        },\n        \"key\": {\n          \"start\": {\n            \"line\": 4,\n            \"column\": 3,\n            \"char_offset\": 68,\n            \"byte_offset\": 68\n          },\n          \"end\": {\n            \"line\": 4,\n            \"column\": 25,\n            \"char_offset\": 90,\n            \"byte_offset\": 90\n          }\n        }\n      }\n    }\n  ],\n  \"sources\": {\n    \"contract\": {\n      \"file\": \"line-2/tools/json-contract/report.contract.json\",\n      \"bytes\": 621,\n      \"sha256\": \"42c48ea1ab01acc4270ab878bc8988c4439b5d9fad5c953123b76f44968c4c13\"\n    },\n    \"document\": {\n      \"file\": \"line-2/tools/rule-locator/report.invalid.json\",\n      \"bytes\": 139,\n      \"sha256\": \"c346ea1106c87b8183edc96693a77bcf0ebefdcd8a4748e23e42592770af4638\"\n    }\n  },\n  \"coordinates\": {\n    \"lines\": \"one-based; LF begins each new line\",\n    \"columns\": \"one-based Unicode code points, not display cells or UTF-16 units\",\n    \"offsets\": \"zero-based; ranges include start and exclude end\",\n    \"encoding\": \"UTF-8; source bytes and CRLF are preserved\"\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-3/tools/settlement-freshness/freshness.py",
+      "--replay",
+      "line-3/tools/settlement-freshness/live-evidence.json",
+      "--policy",
+      "line-3/tools/settlement-freshness/observed-policy.json",
+      "--as-of",
+      "1792010120",
+      "--max-head-age",
+      "120",
+      "--max-finalized-age",
+      "1200",
+      "--future-skew",
+      "30"
+    ],
+    "expectedExitCode": 1,
+    "exitCode": 1,
+    "passed": true,
+    "stdout": "{\n  \"accepted\": false,\n  \"state\": \"review_required\",\n  \"alerts\": [\n    \"head_too_old\",\n    \"finalized_too_old\"\n  ],\n  \"policy\": {\n    \"tx\": \"0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7\",\n    \"recipient\": \"0x2d30e495a15f2657d57c3e2caa08b06415c26cbf\",\n    \"minimum_raw\": \"166357571280020680094504\",\n    \"token\": \"ZTO\",\n    \"confirmations\": 12,\n    \"finalized\": true\n  },\n  \"timePolicy\": {\n    \"asOfUnix\": 1792010120,\n    \"maxHeadAgeSeconds\": 120,\n    \"maxFinalizedAgeSeconds\": 1200,\n    \"futureSkewSeconds\": 30\n  },\n  \"anchors\": {\n    \"head\": {\n      \"number\": 26193067,\n      \"hash\": \"0x2f918ae19c6e679c46ff568c9b17ec6683e5307f2e1bdf1b84edc4c2452173d9\",\n      \"timestampUnix\": 1792008911,\n      \"ageSeconds\": 1209,\n      \"maxAgeSeconds\": 120\n    },\n    \"finalized\": {\n      \"number\": 26192994,\n      \"hash\": \"0xfa8fc721333bf246224d0392736eee7b84679257d5b39f19de8ac7dae82e90fb\",\n      \"timestampUnix\": 1792008023,\n      \"ageSeconds\": 2097,\n      \"maxAgeSeconds\": 1200\n    }\n  },\n  \"payment\": {\n    \"accepted\": true,\n    \"state\": \"settled\",\n    \"head\": {\n      \"number\": 26193067,\n      \"hash\": \"0x2f918ae19c6e679c46ff568c9b17ec6683e5307f2e1bdf1b84edc4c2452173d9\"\n    },\n    \"inclusion\": {\n      \"number\": 26190898,\n      \"hash\": \"0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd\"\n    },\n    \"execution\": \"succeeded\",\n    \"confirmations\": 2170,\n    \"finalized\": true,\n    \"finalizedHead\": {\n      \"number\": 26192994,\n      \"hash\": \"0xfa8fc721333bf246224d0392736eee7b84679257d5b39f19de8ac7dae82e90fb\"\n    },\n    \"paymentState\": \"verified\",\n    \"transferEvidence\": {\n      \"incomingRaw\": \"166357571280020680094504\",\n      \"outgoingRaw\": \"0\",\n      \"netRaw\": \"166357571280020680094504\",\n      \"events\": [\n        {\n          \"from\": \"0x000000000004444c5dc75cb358380d2e3de08a90\",\n          \"to\": \"0x2d30e495a15f2657d57c3e2caa08b06415c26cbf\",\n          \"raw\": \"166357571280020680094504\",\n          \"logIndex\": 632\n        }\n      ]\n    }\n  },\n  \"sampleSha256\": \"cad5b8a1ef659bced5b3996b44f93e2bf1ffda99e6f20402996718206d39b356\",\n  \"evidenceMode\": \"offline historical evaluation at explicit time\",\n  \"evidenceLimit\": \"Provider-supplied block timestamps checked against caller-supplied time; neither is authenticated. This is not a consensus/receipt proof or a guarantee of current canonicality. Offline acceptance is only as of the supplied time.\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-4/tools/request-set-check/request_set_check.py",
+      "line-4/tools/request-set-check/zto-set.json",
+      "line-4/tools/request-set-check/missing-set.json",
+      "--summary"
+    ],
+    "expectedExitCode": 1,
+    "exitCode": 1,
+    "passed": true,
+    "stdout": "{\n  \"version\": 1,\n  \"accepted\": false,\n  \"intendedOrder\": [\n    \"zto-receipt-review\"\n  ],\n  \"clientOrder\": [],\n  \"membershipMatches\": false,\n  \"orderMatches\": false,\n  \"missing\": [\n    \"zto-receipt-review\"\n  ],\n  \"added\": [],\n  \"items\": [],\n  \"reviewIds\": \"caller-assigned labels, not signed or authenticated\",\n  \"ignoredMetadata\": \"JSON-RPC id and provider/JSON-RPC wrapper; review order is required\",\n  \"intendedSource\": \"caller-supplied; requires independent review\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "shared/payment-evidence/time_review.py",
+      "shared/payment-evidence/example.timed-transcript.json",
+      "shared/payment-evidence/example.timed-policy.json",
+      "--as-of",
+      "1792010120",
+      "--max-head-age",
+      "120",
+      "--max-finalized-age",
+      "1200",
+      "--future-skew",
+      "30"
+    ],
+    "expectedExitCode": 1,
+    "exitCode": 1,
+    "passed": true,
+    "stdout": "{\n  \"accepted\": false,\n  \"state\": \"review_required\",\n  \"alerts\": [\n    \"head_too_old\",\n    \"finalized_too_old\"\n  ],\n  \"policy\": {\n    \"tx\": \"0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7\",\n    \"recipient\": \"0x2d30e495a15f2657d57c3e2caa08b06415c26cbf\",\n    \"minimum_raw\": \"166357571280020680094504\",\n    \"token\": \"ZTO\",\n    \"confirmations\": 12,\n    \"finalized\": true\n  },\n  \"timePolicy\": {\n    \"asOfUnix\": 1792010120,\n    \"maxHeadAgeSeconds\": 120,\n    \"maxFinalizedAgeSeconds\": 1200,\n    \"futureSkewSeconds\": 30\n  },\n  \"anchors\": {\n    \"head\": {\n      \"number\": 26193067,\n      \"hash\": \"0x2f918ae19c6e679c46ff568c9b17ec6683e5307f2e1bdf1b84edc4c2452173d9\",\n      \"timestampUnix\": 1792008911,\n      \"ageSeconds\": 1209,\n      \"maxAgeSeconds\": 120\n    },\n    \"finalized\": {\n      \"number\": 26192994,\n      \"hash\": \"0xfa8fc721333bf246224d0392736eee7b84679257d5b39f19de8ac7dae82e90fb\",\n      \"timestampUnix\": 1792008023,\n      \"ageSeconds\": 2097,\n      \"maxAgeSeconds\": 1200\n    }\n  },\n  \"payment\": {\n    \"accepted\": true,\n    \"state\": \"settled\",\n    \"head\": {\n      \"number\": 26193067,\n      \"hash\": \"0x2f918ae19c6e679c46ff568c9b17ec6683e5307f2e1bdf1b84edc4c2452173d9\"\n    },\n    \"inclusion\": {\n      \"number\": 26190898,\n      \"hash\": \"0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd\"\n    },\n    \"execution\": \"succeeded\",\n    \"confirmations\": 2170,\n    \"finalized\": true,\n    \"finalizedHead\": {\n      \"number\": 26192994,\n      \"hash\": \"0xfa8fc721333bf246224d0392736eee7b84679257d5b39f19de8ac7dae82e90fb\"\n    },\n    \"paymentState\": \"verified\",\n    \"transferEvidence\": {\n      \"incomingRaw\": \"166357571280020680094504\",\n      \"outgoingRaw\": \"0\",\n      \"netRaw\": \"166357571280020680094504\",\n      \"events\": [\n        {\n          \"from\": \"0x000000000004444c5dc75cb358380d2e3de08a90\",\n          \"to\": \"0x2d30e495a15f2657d57c3e2caa08b06415c26cbf\",\n          \"raw\": \"166357571280020680094504\",\n          \"logIndex\": 632\n        }\n      ]\n    }\n  },\n  \"sampleSha256\": \"cad5b8a1ef659bced5b3996b44f93e2bf1ffda99e6f20402996718206d39b356\",\n  \"evidenceMode\": \"offline historical evaluation at explicit time\",\n  \"evidenceLimit\": \"Provider-supplied block timestamps checked against caller-supplied time; neither is authenticated. This is not a consensus/receipt proof or a guarantee of current canonicality. Offline acceptance is only as of the supplied time.\",\n  \"policyExplanation\": {\n    \"valid\": true,\n    \"error_count\": 0,\n    \"errors\": [],\n    \"sources\": {\n      \"contract\": {\n        \"file\": \"shared/payment-evidence/policy.contract.json\",\n        \"bytes\": 705,\n        \"sha256\": \"9a8fb8297b152df3532caabf62af9c3ea316e5f51fbdbd96dbb0950a09dca47b\"\n      },\n      \"document\": {\n        \"file\": \"shared/payment-evidence/example.timed-policy.json\",\n        \"bytes\": 249,\n        \"sha256\": \"37097100e7aa7b44f1686174ecfe30a6e9fef01abb96091a2df953492b526818\"\n      }\n    },\n    \"coordinates\": {\n      \"lines\": \"one-based; LF begins each new line\",\n      \"columns\": \"one-based Unicode code points, not display cells or UTF-16 units\",\n      \"offsets\": \"zero-based; ranges include start and exclude end\",\n      \"encoding\": \"UTF-8; source bytes and CRLF are preserved\"\n    }\n  },\n  \"evidenceEvaluated\": true,\n  \"transcriptFile\": {\n    \"file\": \"shared/payment-evidence/example.timed-transcript.json\",\n    \"bytes\": 11519,\n    \"sha256\": \"e65016b648b42f0a0a27bacb222a5e81551c81fcce7cc771242b4b1503cd5e08\"\n  },\n  \"providerAgreement\": \"Single saved observation; no independent-provider agreement is established.\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "shared/payment-evidence/time_review.py",
+      "shared/payment-evidence/example.timed-transcript.json",
+      "test/scratch/invalid-policy-07.json",
+      "--as-of",
+      "1792010120",
+      "--max-head-age",
+      "120",
+      "--max-finalized-age",
+      "1200",
+      "--future-skew",
+      "30"
+    ],
+    "expectedExitCode": 2,
+    "exitCode": 2,
+    "passed": true,
+    "stdout": "{\n  \"accepted\": false,\n  \"state\": \"policy_error\",\n  \"policyExplanation\": {\n    \"valid\": false,\n    \"error_count\": 1,\n    \"errors\": [\n      {\n        \"path\": \"/finalized\",\n        \"rule\": \"type\",\n        \"message\": \"expected boolean\",\n        \"contract_path\": \"/properties/finalized/type\",\n        \"constraint\": {\n          \"present\": true,\n          \"type\": \"string\",\n          \"length\": 7,\n          \"preview\": \"\\\"boolean\\\"\",\n          \"truncated\": false\n        },\n        \"observed\": {\n          \"present\": true,\n          \"type\": \"string\",\n          \"length\": 3,\n          \"preview\": \"\\\"yes\\\"\",\n          \"truncated\": false\n        },\n        \"document_source\": {\n          \"file\": \"test/scratch/invalid-policy-07.json\",\n          \"present\": true,\n          \"value\": {\n            \"start\": {\n              \"line\": 7,\n              \"column\": 16,\n              \"char_offset\": 242,\n              \"byte_offset\": 242\n            },\n            \"end\": {\n              \"line\": 7,\n              \"column\": 21,\n              \"char_offset\": 247,\n              \"byte_offset\": 247\n            }\n          },\n          \"key\": {\n            \"start\": {\n              \"line\": 7,\n              \"column\": 3,\n              \"char_offset\": 229,\n              \"byte_offset\": 229\n            },\n            \"end\": {\n              \"line\": 7,\n              \"column\": 14,\n              \"char_offset\": 240,\n              \"byte_offset\": 240\n            }\n          }\n        },\n        \"contract_source\": {\n          \"file\": \"shared/payment-evidence/policy.contract.json\",\n          \"present\": true,\n          \"value\": {\n            \"start\": {\n              \"line\": 38,\n              \"column\": 15,\n              \"char_offset\": 683,\n              \"byte_offset\": 683\n            },\n            \"end\": {\n              \"line\": 38,\n              \"column\": 24,\n              \"char_offset\": 692,\n              \"byte_offset\": 692\n            }\n          },\n          \"key\": {\n            \"start\": {\n              \"line\": 38,\n              \"column\": 7,\n              \"char_offset\": 675,\n              \"byte_offset\": 675\n            },\n            \"end\": {\n              \"line\": 38,\n              \"column\": 13,\n              \"char_offset\": 681,\n              \"byte_offset\": 681\n            }\n          }\n        }\n      }\n    ],\n    \"sources\": {\n      \"contract\": {\n        \"file\": \"shared/payment-evidence/policy.contract.json\",\n        \"bytes\": 705,\n        \"sha256\": \"9a8fb8297b152df3532caabf62af9c3ea316e5f51fbdbd96dbb0950a09dca47b\"\n      },\n      \"document\": {\n        \"file\": \"test/scratch/invalid-policy-07.json\",\n        \"bytes\": 250,\n        \"sha256\": \"efe028f99c8c58c8a9489c46935eb5897db1538d878201d1c023de1882d678b0\"\n      }\n    },\n    \"coordinates\": {\n      \"lines\": \"one-based; LF begins each new line\",\n      \"columns\": \"one-based Unicode code points, not display cells or UTF-16 units\",\n      \"offsets\": \"zero-based; ranges include start and exclude end\",\n      \"encoding\": \"UTF-8; source bytes and CRLF are preserved\"\n    }\n  },\n  \"evidenceEvaluated\": false\n}\n",
+    "stderr": ""
+  }
+]

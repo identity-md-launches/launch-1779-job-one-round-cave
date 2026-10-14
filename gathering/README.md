@@ -1,57 +1,44 @@
-# Water gathering 06
+# Water gathering 07
 
-This round checks all four lines, joins paired payment rechecks to captured
-client-request account/encoding comparison, and leaves **Look Again Together**.
-No line folder or line record changed. Python's standard library is sufficient;
-POSIX no-follow file opens are required. Dependencies are ordinary vendored files.
+This round checks all four lines and adds a portable offline payment time review
+with exact source locations for malformed policies. It combines Line 2's JSON
+source locator with Line 3's explicit time-budget evaluator. All dependencies are
+ordinary standard-library Python files in `shared/payment-evidence/`.
 
-Run the complete offline line/shared checks and the explicit rejection trials:
+```sh
+python3 -B shared/payment-evidence/time_review.py shared/payment-evidence/example.timed-transcript.json shared/payment-evidence/example.timed-policy.json --as-of 1792008919 --max-head-age 120 --max-finalized-age 1200 --future-skew 30
+```
+
+Observed exit 0, `within_time_budget`, on real historical ZTO evidence. This is
+acceptance at the supplied historical time, not today's chain state. Caller time,
+policy and provider observations remain trust inputs. See `REPORT.md` for every
+line's trials, limits, distinct goal and scope advice; `COINS.md` says none.
 
 ```sh
 python3 -B gathering/run_checks.py
-python3 -B gathering/check_rejections_06.py
-```
-
-Observed: **54 commands, 385 tests passed**; all five rejection trials return their
-expected exit 1. A detached copy of the shared folder reproduces its new command
-and all 14 new tests without line folders, packages or network. See
-`../shared/payment-evidence/README.md` for independent inputs and limitations.
-
-`REPORT.md` records every line's working pieces, trials, limits, distinct goal
-and scope advice. `COINS.md` says none: ZTO already supplies real token evidence,
-with IMD supported second. Fresh read-only ZTO supply comparison and payment
-recheck succeeded; `live-check-results-06.json` retains their observations.
-`live_checks_06.py` supports public read trials and injectable job transport.
-Saved transcripts replay offline. Fresh single-provider evidence is kept separate
-from the historical two-provider integration example. No keys, environment,
-wallet, signature, transaction submission or service POST is involved.
-
-The finished wall is **1254 × 1254 RGB PNG** at required
-`artifacts/gathering/wall-v6.png` and `artifacts/gathering/wall.png` (identical).
-`dist/gathering/06.jpg` is **512 × 512 JPEG**, 75,342 bytes. Record 06 has the exact
-six traits and final PNG SHA-256 URL. The image tool produced one returning-eye
-Pepe pigment insert; one-time finishing preserved all pixels outside its vacant
-stone rectangle and deep cracks within it. `finish_wall_06.py` requires the
-verified gathering-05 ancestor and generated draft, so cannot be rerun on the
-finished wall. It adds no ancestor-erasing repaint. Full PNG and decoded JPEG
-were visually inspected. No hands/handprints occur; no digit count applies.
-**No known unmet visual requirements.** `wall-review-06.json` records the review.
-
-Rebuild the one-page gallery and check the structural deliverable:
-
-```sh
+python3 -B gathering/check_rejections_07.py
 python3 -B gathering/build_gallery.py
 python3 -B gathering/check_delivery.py
 ```
 
-Observed: **125 records, 30 paintings, 95 pending slots**, newest painted first
-within each wall. Inline styles/captions and local painted previews work offline;
-full-size and bare-cave links point to public artifacts. Existing first-gathering
-placeholders remain covered. Checks verify formats/dimensions, hashes, record
-shape, all slots, goals, gallery order, provenance, unchanged line files and file
-sizes. They carry no independent visual/behavioral authority. Artifact outputs
-remain untracked for separate daemon upload.
+65 offline commands / 467 tests and six rejection trials pass. The new shared
+command and 13 integration tests also pass in a detached folder without the lines
+or network. Logs are split by group to keep every delivered file below 100 KB.
+No line folder changed. No dependency install, configuration edit or submodule.
 
-Local Git staging was unavailable: creating `.git/index.lock` returned
-`Read-only file system`. Source changes remain ordinary unstaged workspace files
-for the network's submission process; artifact PNGs remain untracked as required.
+The mark **Before the Grains Fall** adds a small Pepe head beside falling ochre
+grains and two bowls. Built-in imagegen made the pigment; `finish_wall_07.py`
+composed it on vacant ancestral stone, preserving all pixels outside its small
+rectangle and deep cracks within. That one-time script needs the verified round
+06 ancestor plus generated draft; do not rerun it on the finished wall.
+
+Required output: `artifacts/gathering/wall-v7.png`, **1254 × 1254 RGB PNG**, also
+at `artifacts/gathering/wall.png`. Preview: `dist/gathering/07.jpg`, **512 × 512
+JPEG**, 75,629 bytes. Full PNG and JPEG visually inspected. No hands/handprints,
+text or forbidden symbols observed; **no known unmet visual requirements**.
+`wall-review-07.json` records the prompt, hashes, dimensions and preservation.
+
+Record 07 and the rebuilt gallery cover 35 paintings / 129 total records with
+94 pending slots. Painted previews are local; full walls use artifact URLs.
+PNG artifacts remain untracked for separate upload. Structural checks do not
+independently certify visual quality or the truth of chain observations.

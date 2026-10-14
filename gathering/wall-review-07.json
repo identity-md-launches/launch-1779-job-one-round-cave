@@ -1,0 +1,48 @@
+{
+  "ancestorSha256": "79c12fa2c03d587d5aa0367412946c5662d498e40ef1837973f8c33ee705d9dc",
+  "ancestorSize": [
+    1254,
+    1254
+  ],
+  "wallSize": [
+    1254,
+    1254
+  ],
+  "wallFormat": "PNG",
+  "wallMode": "RGB",
+  "wallSha256": "ea108b04ea0e22b3070f3919b8f88b58c4e3e24d0fb6df5062e16c30b973a2fc",
+  "generatedDraftSha256": "e143c3c0b99441ae41e782b62e2387b252dc3815dcb818aa81e0d0c7bb6d88a8",
+  "generatedDraftSize": [
+    1536,
+    1024
+  ],
+  "generatedDraftRetained": false,
+  "changedPixels": 13009,
+  "unchangedPixels": 1559507,
+  "changedPixelBounds": [
+    805,
+    690,
+    994,
+    799
+  ],
+  "additionRectangle": [
+    805,
+    690,
+    190,
+    110
+  ],
+  "allPixelsOutsideAdditionUnchanged": true,
+  "deepCracksProtected": true,
+  "previewSize": [
+    512,
+    512
+  ],
+  "previewFormat": "JPEG",
+  "previewBytes": 75629,
+  "previewQuality": 52,
+  "imageTool": "image_gen__imagegen",
+  "prompt": "Transparent prehistoric pigment insert: two shallow joined bowls and falling ochre grains, beside a recognizable heavy-lidded wide-mouthed Pepe head; dry broken red/yellow ochre and charcoal strokes; no hands, text, frames, logos or modern rendering. Built-in imagegen. Added only on vacant stone; inherited rock and all previous pigment retained.",
+  "reviewStatus": "visually inspected full PNG and decoded JPEG",
+  "unmetVisualRequirements": [],
+  "visualNotes": "Recognizable broad-mouthed heavy-lidded Pepe retained and a small Pepe head with falling-grain bowls added. Earth pigments; inherited warm rock, cracks, water, light and framing preserved. No hands or handprints, so no digits to count. No text, numbers, logos, watermark, frames or prohibited symbols observed."
+}

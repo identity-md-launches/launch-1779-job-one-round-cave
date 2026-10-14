@@ -1,10 +1,30 @@
 {
-  "name": "Not painted yet",
-  "image": "https://api.imd.fun/artifacts/ce5dbc18003365f5a1bf9014a2a357c2cb5c5dc2335dd0eb9b661ae703d36308",
+  "name": "Before the Grains Fall",
+  "image": "https://api.imd.fun/artifacts/ea108b04ea0e22b3070f3919b8f88b58c4e3e24d0fb6df5062e16c30b973a2fc",
   "attributes": [
     {
       "trait_type": "Cave",
       "value": "Water"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Gathering"
+    },
+    {
+      "trait_type": "Number",
+      "value": 7
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Payment time review with exact policy source locations"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Pepe watches falling ochre grains before trusting an old payment observation."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Gathering"
     }
   ]
 }

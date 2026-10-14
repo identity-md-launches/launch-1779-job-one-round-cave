@@ -82,8 +82,8 @@ def jpeg_info(path):
 
 
 def main():
-    number = 6
-    wall = ROOT / "artifacts/gathering/wall-v6.png"
+    number = 7
+    wall = ROOT / "artifacts/gathering/wall-v7.png"
     preview = ROOT / f"dist/gathering/{number:02}.jpg"
     png, jpeg = png_info(wall), jpeg_info(preview)
     assert wall.read_bytes() == (ROOT / 'artifacts/gathering/wall.png').read_bytes()
@@ -152,7 +152,7 @@ def main():
         assert hashlib.sha256(copied.read_bytes()).hexdigest() == entry['copiedSha256']
         if entry['adaptation'] == 'none; byte-for-byte source copy':
             assert source.read_bytes() == copied.read_bytes()
-    review = json.loads((ROOT / 'gathering/wall-review-06.json').read_text())
+    review = json.loads((ROOT / 'gathering/wall-review-07.json').read_text())
     assert review['wallSha256'] == hashlib.sha256(wall.read_bytes()).hexdigest()
     assert review['changedPixels'] + review['unchangedPixels'] == png['width'] * png['height']
     assert review['unmetVisualRequirements'] == []

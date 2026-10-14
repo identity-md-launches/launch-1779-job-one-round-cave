@@ -81,6 +81,21 @@ def main():
         ['shared/payment-evidence/test_revisit.py'],
         ['shared/payment-evidence/revisit.py', 'shared/payment-evidence/example.paired.json', 'shared/payment-evidence/round05.paired.json', 'shared/payment-evidence/example.paired-policy.json', 'shared/payment-evidence/example.revisit-envelope.json', 'shared/payment-evidence/example.revisit-envelope.json', '--summary'],
     ])
+    commands.extend([
+        ['line-1/tools/snapshot-report/report.py', 'line-1/tools/compare-zto-snapshots/live-zto.json'],
+        ['line-1/tools/snapshot-report/test_report.py'],
+        ['line-2/tools/source-locator/locate.py', 'shared/payment-evidence/policy.contract.json', 'shared/payment-evidence/example.policy.json'],
+        ['line-2/tools/source-locator/test_locate.py'],
+        ['line-2/tools/bounded-contract/check.py', 'line-2/tools/ordered-deliverables/record.strict.contract.json', 'dist/line-2/27.json'],
+        ['line-3/tools/settlement-freshness/freshness.py', '--demo'],
+        ['-m', 'unittest', 'discover', '-s', 'line-3/tools/settlement-freshness', '-v'],
+        ['line-4/tools/request-set-check/request_set_check.py', 'line-4/tools/request-set-check/zto-set.json', 'line-4/tools/request-set-check/zto-set.json', '--summary'],
+        ['-m', 'unittest', 'discover', '-s', 'line-4/tools/request-set-check', '-v'],
+    ])
+    commands.extend([
+        ['shared/payment-evidence/test_time_review.py'],
+        ['shared/payment-evidence/time_review.py', 'shared/payment-evidence/example.timed-transcript.json', 'shared/payment-evidence/example.timed-policy.json', '--as-of', '1792008919', '--max-head-age', '120', '--max-finalized-age', '1200', '--future-skew', '30'],
+    ])
     results = []
     for args in commands:
         command = [sys.executable, '-B', *args]
@@ -88,9 +103,11 @@ def main():
         result = subprocess.run(command, capture_output=True, text=True, timeout=45)
         results.append({'command': ' '.join(['python3', '-B', *args]),
                         'exitCode': result.returncode, 'seconds': round(time.monotonic()-started, 3),
-                        'stdout': result.stdout, 'stderr': result.stderr})
+                        'stdout': result.stdout if len(result.stdout) < 15000 else '[large HTML output; SHA-256 ' + __import__('hashlib').sha256(result.stdout.encode()).hexdigest() + '; bytes ' + str(len(result.stdout.encode())) + ']', 'stderr': result.stderr})
         print('PASS' if result.returncode == 0 else 'FAIL', ' '.join(args), flush=True)
-    (ROOT / 'gathering/check-results.json').write_text(json.dumps(results, separators=(',', ':'))+'\n')
+    for group in ['line-1', 'line-2', 'line-3', 'line-4', 'shared']:
+        selected = [r for r in results if group in r['command'] or (group == 'line-4' and 'test/scratch/typed-digest' in r['command'])]
+        (ROOT / ('gathering/check-07-' + group + '.json')).write_text(json.dumps(selected, separators=(',', ':'))+'\n')
     return 0 if all(r['exitCode'] == 0 for r in results) else 1
 
 

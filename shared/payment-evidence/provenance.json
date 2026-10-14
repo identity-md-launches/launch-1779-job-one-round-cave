@@ -96,5 +96,19 @@
     "sha256": "c7f8ef3761069ce6778917c7b16d8fc5ed99a76b1aab50da3c9bdd3dc2e43a0c",
     "copiedSha256": "c7f8ef3761069ce6778917c7b16d8fc5ed99a76b1aab50da3c9bdd3dc2e43a0c",
     "adaptation": "none; byte-for-byte source copy"
+  },
+  {
+    "source": "line-2/tools/source-locator/locate.py",
+    "copy": "vendor/source-locator/locate.py",
+    "sha256": "a40b3cfebb12eec0623a020db51763d2fd258489aad0e6c6e5cf9c7a168a8cd8",
+    "copiedSha256": "a40b3cfebb12eec0623a020db51763d2fd258489aad0e6c6e5cf9c7a168a8cd8",
+    "adaptation": "none; byte-for-byte source copy"
+  },
+  {
+    "source": "line-3/tools/settlement-freshness/freshness.py",
+    "copy": "vendor/settlement-freshness/freshness.py",
+    "sha256": "80b103d4e29cf7ed7ec7560e9b22dfad22abc097ef48dd4862d5cd7425d5939c",
+    "copiedSha256": "80b103d4e29cf7ed7ec7560e9b22dfad22abc097ef48dd4862d5cd7425d5939c",
+    "adaptation": "none; byte-for-byte source copy"
   }
 ]

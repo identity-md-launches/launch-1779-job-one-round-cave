@@ -38,3 +38,10 @@ compare the client's public account as well as EIP-712 encoding. Invalid policie
 have exact document/contract rule pointers. Includes unchanged vendored line
 pieces, 14 integration tests and a detached offline demo using real historical
 ZTO observations. It never dispatches a captured method or promotes a baseline.
+
+Gathering 07 adds `payment-evidence/time_review.py`: check an independently chosen
+payment policy with exact UTF-8 source/rule locations, then replay timestamp-bearing
+ZTO/IMD evidence against explicit caller time and age budgets. Includes real
+historical ZTO fixtures and 13 integration tests. A detached folder reproduces
+both acceptance and stale-evidence rejection offline. It reviews one observation
+and does not substitute for the paired-provider requirements of `revisit.py`.

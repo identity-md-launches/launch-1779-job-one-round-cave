@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "lineFoldersPresent": false,
+  "networkRequired": false,
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "payment-evidence/time_review.py",
+        "payment-evidence/example.timed-transcript.json",
+        "payment-evidence/example.timed-policy.json",
+        "--as-of",
+        "1792008919",
+        "--max-head-age",
+        "120",
+        "--max-finalized-age",
+        "1200",
+        "--future-skew",
+        "30"
+      ],
+      "exitCode": 0,
+      "stdout": "{\n  \"accepted\": true,\n  \"state\": \"within_time_budget\",\n  \"alerts\": [],\n  \"policy\": {\n    \"tx\": \"0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7\",\n    \"recipient\": \"0x2d30e495a15f2657d57c3e2caa08b06415c26cbf\",\n    \"minimum_raw\": \"166357571280020680094504\",\n    \"token\": \"ZTO\",\n    \"confirmations\": 12,\n    \"finalized\": true\n  },\n  \"timePolicy\": {\n    \"asOfUnix\": 1792008919,\n    \"maxHeadAgeSeconds\": 120,\n    \"maxFinalizedAgeSeconds\": 1200,\n    \"futureSkewSeconds\": 30\n  },\n  \"anchors\": {\n    \"head\": {\n      \"number\": 26193067,\n      \"hash\": \"0x2f918ae19c6e679c46ff568c9b17ec6683e5307f2e1bdf1b84edc4c2452173d9\",\n      \"timestampUnix\": 1792008911,\n      \"ageSeconds\": 8,\n      \"maxAgeSeconds\": 120\n    },\n    \"finalized\": {\n      \"number\": 26192994,\n      \"hash\": \"0xfa8fc721333bf246224d0392736eee7b84679257d5b39f19de8ac7dae82e90fb\",\n      \"timestampUnix\": 1792008023,\n      \"ageSeconds\": 896,\n      \"maxAgeSeconds\": 1200\n    }\n  },\n  \"payment\": {\n    \"accepted\": true,\n    \"state\": \"settled\",\n    \"head\": {\n      \"number\": 26193067,\n      \"hash\": \"0x2f918ae19c6e679c46ff568c9b17ec6683e5307f2e1bdf1b84edc4c2452173d9\"\n    },\n    \"inclusion\": {\n      \"number\": 26190898,\n      \"hash\": \"0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd\"\n    },\n    \"execution\": \"succeeded\",\n    \"confirmations\": 2170,\n    \"finalized\": true,\n    \"finalizedHead\": {\n      \"number\": 26192994,\n      \"hash\": \"0xfa8fc721333bf246224d0392736eee7b84679257d5b39f19de8ac7dae82e90fb\"\n    },\n    \"paymentState\": \"verified\",\n    \"transferEvidence\": {\n      \"incomingRaw\": \"166357571280020680094504\",\n      \"outgoingRaw\": \"0\",\n      \"netRaw\": \"166357571280020680094504\",\n      \"events\": [\n        {\n          \"from\": \"0x000000000004444c5dc75cb358380d2e3de08a90\",\n          \"to\": \"0x2d30e495a15f2657d57c3e2caa08b06415c26cbf\",\n          \"raw\": \"166357571280020680094504\",\n          \"logIndex\": 632\n        }\n      ]\n    }\n  },\n  \"sampleSha256\": \"cad5b8a1ef659bced5b3996b44f93e2bf1ffda99e6f20402996718206d39b356\",\n  \"evidenceMode\": \"offline historical evaluation at explicit time\",\n  \"evidenceLimit\": \"Provider-supplied block timestamps checked against caller-supplied time; neither is authenticated. This is not a consensus/receipt proof or a guarantee of current canonicality. Offline acceptance is only as of the supplied time.\",\n  \"policyExplanation\": {\n    \"valid\": true,\n    \"error_count\": 0,\n    \"errors\": [],\n    \"sources\": {\n      \"contract\": {\n        \"file\": \"payment-evidence/policy.contract.json\",\n        \"bytes\": 705,\n        \"sha256\": \"9a8fb8297b152df3532caabf62af9c3ea316e5f51fbdbd96dbb0950a09dca47b\"\n      },\n      \"document\": {\n        \"file\": \"payment-evidence/example.timed-policy.json\",\n        \"bytes\": 249,\n        \"sha256\": \"37097100e7aa7b44f1686174ecfe30a6e9fef01abb96091a2df953492b526818\"\n      }\n    },\n    \"coordinates\": {\n      \"lines\": \"one-based; LF begins each new line\",\n      \"columns\": \"one-based Unicode code points, not display cells or UTF-16 units\",\n      \"offsets\": \"zero-based; ranges include start and exclude end\",\n      \"encoding\": \"UTF-8; source bytes and CRLF are preserved\"\n    }\n  },\n  \"evidenceEvaluated\": true,\n  \"transcriptFile\": {\n    \"file\": \"payment-evidence/example.timed-transcript.json\",\n    \"bytes\": 11519,\n    \"sha256\": \"e65016b648b42f0a0a27bacb222a5e81551c81fcce7cc771242b4b1503cd5e08\"\n  },\n  \"providerAgreement\": \"Single saved observation; no independent-provider agreement is established.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "payment-evidence/test_time_review.py"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "test_cli_success_and_bounded_fail_closed_output (__main__.ReviewTests.test_cli_success_and_bounded_fail_closed_output) ... ok\ntest_clock_required_not_taken_from_saved_observation (__main__.ReviewTests.test_clock_required_not_taken_from_saved_observation) ... ok\ntest_duplicate_json_and_nonfinite_fail (__main__.ReviewTests.test_duplicate_json_and_nonfinite_fail) ... ok\ntest_exact_age_boundaries (__main__.ReviewTests.test_exact_age_boundaries) ... ok\ntest_input_files_read_once (__main__.ReviewTests.test_input_files_read_once) ... ok\ntest_missing_policy_field_is_absent_not_null (__main__.ReviewTests.test_missing_policy_field_is_absent_not_null) ... ok\ntest_policy_cannot_silently_change_evidence (__main__.ReviewTests.test_policy_cannot_silently_change_evidence) ... ok\ntest_real_historical_acceptance_and_exact_input_hashes (__main__.ReviewTests.test_real_historical_acceptance_and_exact_input_hashes) ... ok\ntest_semantic_policy_failure (__main__.ReviewTests.test_semantic_policy_failure) ... ok\ntest_stale_evidence_rejected_even_when_payment_passes (__main__.ReviewTests.test_stale_evidence_rejected_even_when_payment_passes) ... ok\ntest_structural_error_has_exact_source_and_rule_spans (__main__.ReviewTests.test_structural_error_has_exact_source_and_rule_spans) ... ok\ntest_timestamp_free_ancestor_and_tampered_requests_fail (__main__.ReviewTests.test_timestamp_free_ancestor_and_tampered_requests_fail) ... ok\ntest_unsafe_and_oversized_inputs_fail (__main__.ReviewTests.test_unsafe_and_oversized_inputs_fail) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.184s\n\nOK\n"
+    }
+  ]
+}

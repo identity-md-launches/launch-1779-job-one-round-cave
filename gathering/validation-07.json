@@ -1,0 +1,12 @@
+{
+  "offlineCommands": 65,
+  "testsPassed": 467,
+  "rejectionTrials": 6,
+  "portableNewTests": 13,
+  "lineFoldersUnchanged": true,
+  "scopeCheckPassed": true,
+  "diffWhitespaceCheckPassed": true,
+  "requiredWallUntracked": true,
+  "requiredWallSha256": "ea108b04ea0e22b3070f3919b8f88b58c4e3e24d0fb6df5062e16c30b973a2fc",
+  "unmetVisualRequirements": []
+}
