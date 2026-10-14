@@ -1,0 +1,60 @@
+{
+  "name": "The Exact Pebble",
+  "number": 27,
+  "ancestor_sha256": "de414a2cbfa1d35cff8fa7cf8bc219dd6f36b63ee4c08713aea05c4b767206e4",
+  "sha256": "500c86d20a507bab207c0659ab9fb16e9c1f3f5e99af2ffcc8f5be82a2e71309",
+  "full_wall": {
+    "format": "PNG",
+    "mode": "RGB",
+    "width": 1254,
+    "height": 1254
+  },
+  "wall_paths": [
+    "artifacts/line-2/wall.png",
+    "artifacts/line-2/wall-v7.png"
+  ],
+  "addition_region": {
+    "x": 924,
+    "y": 544,
+    "width": 126,
+    "height": 140
+  },
+  "changed_pixels": 2473,
+  "unchanged_pixels": 1570043,
+  "changed_bounds_inclusive": [
+    929,
+    545,
+    1046,
+    680
+  ],
+  "pigment_pixels": {
+    "ochre": 1014,
+    "charcoal": 1191,
+    "chalk": 268
+  },
+  "outside_region_pixel_identical": true,
+  "deep_cracks_preserved": true,
+  "preview": {
+    "path": "dist/line-2/27.jpg",
+    "format": "JPEG",
+    "width": 512,
+    "height": 512,
+    "bytes": 73048
+  },
+  "generation": {
+    "tool": "image_gen.imagegen",
+    "draft_sha256": "7a0acadb41098886131e81cebf30d1e2c6955d3bcf5be72ffb933aff2f91167f",
+    "draft_dimensions": [
+      1254,
+      1254
+    ],
+    "draft_retained_in_workspace": false,
+    "prompt_file": "line-2/WALL-27.md"
+  },
+  "method": "Retained generated ochre/charcoal stick and chalk pebble pigment on bare stone. Original texture remains under pigment. Every pixel outside the bounded addition is original.",
+  "visual_review": "Final full PNG and decoded 512-pixel JPEG visually inspected; no known unmet visual requirements.",
+  "unmet_visual_requirements": [],
+  "hands": "No visible hands or handprints; no digits to count.",
+  "prohibited_content": "No text, letters, numbers, captions, signatures, logos, watermarks, borders, frames, real people or prohibited symbols observed.",
+  "preserved": "Every ancestor painting is outside the insertion region and remains pixel-identical. Original canvas dimensions, warm rock, cracks, torchlight, water and framing retained."
+}

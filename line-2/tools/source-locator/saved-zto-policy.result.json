@@ -1,0 +1,23 @@
+{
+  "valid": true,
+  "error_count": 0,
+  "errors": [],
+  "sources": {
+    "contract": {
+      "file": "shared/payment-evidence/policy.contract.json",
+      "bytes": 705,
+      "sha256": "9a8fb8297b152df3532caabf62af9c3ea316e5f51fbdbd96dbb0950a09dca47b"
+    },
+    "document": {
+      "file": "shared/payment-evidence/example.policy.json",
+      "bytes": 249,
+      "sha256": "37097100e7aa7b44f1686174ecfe30a6e9fef01abb96091a2df953492b526818"
+    }
+  },
+  "coordinates": {
+    "lines": "one-based; LF begins each new line",
+    "columns": "one-based Unicode code points, not display cells or UTF-16 units",
+    "offsets": "zero-based; ranges include start and exclude end",
+    "encoding": "UTF-8; source bytes and CRLF are preserved"
+  }
+}

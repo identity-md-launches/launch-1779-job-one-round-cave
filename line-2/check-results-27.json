@@ -1,0 +1,68 @@
+{
+  "valid": true,
+  "number": 27,
+  "wall": {
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB"
+  },
+  "preview": {
+    "format": "JPEG",
+    "width": 512,
+    "height": 512,
+    "bytes": 73048
+  },
+  "sha256": "500c86d20a507bab207c0659ab9fb16e9c1f3f5e99af2ffcc8f5be82a2e71309",
+  "new_record_contract": {
+    "valid": true,
+    "error_count": 0,
+    "errors": [],
+    "sources": {
+      "contract": {
+        "file": "line-2/tools/ordered-deliverables/record.strict.contract.json",
+        "bytes": 3239,
+        "sha256": "3b038e83c270b22a67f7b7d5c89875bbefc458862dd5c785476e9aae34336230"
+      },
+      "document": {
+        "file": "dist/line-2/27.json",
+        "bytes": 684,
+        "sha256": "72f5597b81923afe972d10fe0bca48b721764b0bf39e498be74185df29ac7661"
+      }
+    },
+    "coordinates": {
+      "lines": "one-based; LF begins each new line",
+      "columns": "one-based Unicode code points, not display cells or UTF-16 units",
+      "offsets": "zero-based; ranges include start and exclude end",
+      "encoding": "UTF-8; source bytes and CRLF are preserved"
+    }
+  },
+  "goal_unchanged": true,
+  "all_older_records_and_previews_unchanged": true,
+  "ancestor_source_changes": "Only appended USED.md; every inherited tool unchanged",
+  "scope_and_size_checks": true,
+  "git_diff_check": true,
+  "artifact_pngs_untracked": true,
+  "new_tests_passed": 16,
+  "inherited_tests_passed": 64,
+  "unmet_visual_requirements": [],
+  "visual_review": "Full PNG and decoded JPEG inspected separately; structural checks do not certify visual quality.",
+  "changed_files": [
+    "line-2/USED.md",
+    "dist/line-2/27.jpg",
+    "dist/line-2/27.json",
+    "line-2/WALL-27.md",
+    "line-2/finish_wall_27.py",
+    "line-2/image_bytes.py",
+    "line-2/tools/source-locator/README.md",
+    "line-2/tools/source-locator/invalid-report.result.json",
+    "line-2/tools/source-locator/locate.py",
+    "line-2/tools/source-locator/saved-zto-policy.result.json",
+    "line-2/tools/source-locator/test_locate.py",
+    "line-2/tools/source-locator/validation.json",
+    "line-2/wall-review-27.json",
+    "line-2/check-results-27.json",
+    "artifacts/line-2/wall.png",
+    "artifacts/line-2/wall-v7.png"
+  ]
+}

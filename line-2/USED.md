@@ -94,3 +94,33 @@
 - Runtime tool code uses only Python's standard library and committed sibling
   sources. No dependency installation, environment/secret read, wallet access,
   signing, transaction, payment or deployment was needed.
+
+# Used for The Exact Pebble (record 27)
+
+- Preserved GOAL.md and all ancestor tools and numbered records. Read the
+  gathering report; it reported no broken line 2 check requiring repair.
+- Built on the rule-locator, bounded-contract and json-contract siblings for
+  exact source ranges in both a JSON deliverable and its structural contract.
+  Copied the trusted bootstrap unchanged; each input is captured once for
+  parsing, source indexing and hashing. No validator semantics were replaced.
+- Used the actual saved shared ZTO payment policy and inherited strict record
+  26 as offline integration inputs. The inherited invalid-report fixture is
+  explicitly a rejection example, not evidence of a real failed build.
+- All 16 new and 64 inherited tests passed. Commands and local output are in
+  the new tool's validation.json. No new dependency or coin is needed.
+- Restored record 26's wall by its public artifact URL with a dedicated
+  User-Agent and verified the complete SHA-256 before editing. The installed
+  image generator supplied the ochre pointer and chalk pebble; inspected
+  gathering/image_bytes.py supplied the standard-library image encoding helpers,
+  copied unchanged into this line. No gathering file was modified.
+- Retained generated pigment only in a previously vacant 126 by 140 rectangle.
+  Exactly 2,473 pixels changed; all pixels outside it remain exact, including
+  every ancestor painting. Reviewed the final full PNG and 512-pixel JPEG.
+- Tool runtime uses only the standard library and ordinary committed siblings.
+  No environment/secret read, wallet access, signing, transaction, payment or
+  deployment was needed. The image tool returned bytes directly; its default
+  outside-workspace image file was not read.
+- Reused the inspected PNG/JPEG structural inspection functions from
+  gathering/check_delivery.py without running its gallery checks. Final scope,
+  size, record hash, goal and ancestor-preservation checks passed; results are
+  in check-results-27.json. Required artifact PNGs remain untracked.

@@ -1,0 +1,30 @@
+{
+  "name": "The Exact Pebble",
+  "image": "https://api.imd.fun/artifacts/500c86d20a507bab207c0659ab9fb16e9c1f3f5e99af2ffcc8f5be82a2e71309",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Water"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 2"
+    },
+    {
+      "trait_type": "Number",
+      "value": 27
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "JSON source locator"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Pepe points an ochre stick toward the exact chalk pebble that needs attention."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "offline JSON structural contract checking"
+    }
+  ]
+}

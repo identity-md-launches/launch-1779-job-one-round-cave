@@ -1,0 +1,272 @@
+{
+  "valid": false,
+  "error_count": 3,
+  "errors": [
+    {
+      "path": "/checks/0/passed",
+      "rule": "type",
+      "message": "expected boolean",
+      "contract_path": "/properties/checks/items/properties/passed/type",
+      "constraint": {
+        "present": true,
+        "type": "string",
+        "length": 7,
+        "preview": "\"boolean\"",
+        "truncated": false
+      },
+      "observed": {
+        "present": true,
+        "type": "string",
+        "length": 3,
+        "preview": "\"yes\"",
+        "truncated": false
+      },
+      "document_source": {
+        "file": "line-2/tools/rule-locator/report.invalid.json",
+        "present": true,
+        "value": {
+          "start": {
+            "line": 4,
+            "column": 44,
+            "char_offset": 92,
+            "byte_offset": 92
+          },
+          "end": {
+            "line": 4,
+            "column": 49,
+            "char_offset": 97,
+            "byte_offset": 97
+          }
+        },
+        "key": {
+          "start": {
+            "line": 4,
+            "column": 34,
+            "char_offset": 82,
+            "byte_offset": 82
+          },
+          "end": {
+            "line": 4,
+            "column": 42,
+            "char_offset": 90,
+            "byte_offset": 90
+          }
+        }
+      },
+      "contract_source": {
+        "file": "line-2/tools/json-contract/report.contract.json",
+        "present": true,
+        "value": {
+          "start": {
+            "line": 17,
+            "column": 30,
+            "char_offset": 525,
+            "byte_offset": 525
+          },
+          "end": {
+            "line": 17,
+            "column": 39,
+            "char_offset": 534,
+            "byte_offset": 534
+          }
+        },
+        "key": {
+          "start": {
+            "line": 17,
+            "column": 22,
+            "char_offset": 517,
+            "byte_offset": 517
+          },
+          "end": {
+            "line": 17,
+            "column": 28,
+            "char_offset": 523,
+            "byte_offset": 523
+          }
+        }
+      }
+    },
+    {
+      "path": "/checks/0/seconds",
+      "rule": "minimum",
+      "message": "must respect minimum 0",
+      "contract_path": "/properties/checks/items/properties/seconds/minimum",
+      "constraint": {
+        "present": true,
+        "type": "integer",
+        "preview": "0",
+        "truncated": false
+      },
+      "observed": {
+        "present": true,
+        "type": "integer",
+        "preview": "-1",
+        "truncated": false
+      },
+      "document_source": {
+        "file": "line-2/tools/rule-locator/report.invalid.json",
+        "present": true,
+        "value": {
+          "start": {
+            "line": 4,
+            "column": 62,
+            "char_offset": 110,
+            "byte_offset": 110
+          },
+          "end": {
+            "line": 4,
+            "column": 64,
+            "char_offset": 112,
+            "byte_offset": 112
+          }
+        },
+        "key": {
+          "start": {
+            "line": 4,
+            "column": 51,
+            "char_offset": 99,
+            "byte_offset": 99
+          },
+          "end": {
+            "line": 4,
+            "column": 60,
+            "char_offset": 108,
+            "byte_offset": 108
+          }
+        }
+      },
+      "contract_source": {
+        "file": "line-2/tools/json-contract/report.contract.json",
+        "present": true,
+        "value": {
+          "start": {
+            "line": 18,
+            "column": 52,
+            "char_offset": 588,
+            "byte_offset": 588
+          },
+          "end": {
+            "line": 18,
+            "column": 53,
+            "char_offset": 589,
+            "byte_offset": 589
+          }
+        },
+        "key": {
+          "start": {
+            "line": 18,
+            "column": 41,
+            "char_offset": 577,
+            "byte_offset": 577
+          },
+          "end": {
+            "line": 18,
+            "column": 50,
+            "char_offset": 586,
+            "byte_offset": 586
+          }
+        }
+      }
+    },
+    {
+      "path": "/unexpected",
+      "rule": "additionalProperties",
+      "message": "unexpected property",
+      "contract_path": "/additionalProperties",
+      "constraint": {
+        "present": true,
+        "type": "boolean",
+        "preview": "false",
+        "truncated": false
+      },
+      "observed": {
+        "present": true,
+        "type": "null",
+        "preview": "null",
+        "truncated": false
+      },
+      "document_source": {
+        "file": "line-2/tools/rule-locator/report.invalid.json",
+        "present": true,
+        "value": {
+          "start": {
+            "line": 5,
+            "column": 17,
+            "char_offset": 132,
+            "byte_offset": 132
+          },
+          "end": {
+            "line": 5,
+            "column": 21,
+            "char_offset": 136,
+            "byte_offset": 136
+          }
+        },
+        "key": {
+          "start": {
+            "line": 5,
+            "column": 3,
+            "char_offset": 118,
+            "byte_offset": 118
+          },
+          "end": {
+            "line": 5,
+            "column": 15,
+            "char_offset": 130,
+            "byte_offset": 130
+          }
+        }
+      },
+      "contract_source": {
+        "file": "line-2/tools/json-contract/report.contract.json",
+        "present": true,
+        "value": {
+          "start": {
+            "line": 4,
+            "column": 27,
+            "char_offset": 92,
+            "byte_offset": 92
+          },
+          "end": {
+            "line": 4,
+            "column": 32,
+            "char_offset": 97,
+            "byte_offset": 97
+          }
+        },
+        "key": {
+          "start": {
+            "line": 4,
+            "column": 3,
+            "char_offset": 68,
+            "byte_offset": 68
+          },
+          "end": {
+            "line": 4,
+            "column": 25,
+            "char_offset": 90,
+            "byte_offset": 90
+          }
+        }
+      }
+    }
+  ],
+  "sources": {
+    "contract": {
+      "file": "line-2/tools/json-contract/report.contract.json",
+      "bytes": 621,
+      "sha256": "42c48ea1ab01acc4270ab878bc8988c4439b5d9fad5c953123b76f44968c4c13"
+    },
+    "document": {
+      "file": "line-2/tools/rule-locator/report.invalid.json",
+      "bytes": 139,
+      "sha256": "c346ea1106c87b8183edc96693a77bcf0ebefdcd8a4748e23e42592770af4638"
+    }
+  },
+  "coordinates": {
+    "lines": "one-based; LF begins each new line",
+    "columns": "one-based Unicode code points, not display cells or UTF-16 units",
+    "offsets": "zero-based; ranges include start and exclude end",
+    "encoding": "UTF-8; source bytes and CRLF are preserved"
+  }
+}

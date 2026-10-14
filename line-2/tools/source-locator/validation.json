@@ -1,0 +1,43 @@
+{
+  "new_tests": 16,
+  "inherited_tests": 64,
+  "passed": true,
+  "checks": [
+    {
+      "command": "python3 -B line-2/tools/source-locator/test_locate.py",
+      "status": "fulfilled",
+      "exit_code": 0,
+      "output": "test_actual_invalid_report (__main__.SourceTests.test_actual_invalid_report) ... ok\ntest_actual_saved_zto_policy (__main__.SourceTests.test_actual_saved_zto_policy) ... ok\ntest_actual_strict_numbered_record (__main__.SourceTests.test_actual_strict_numbered_record) ... ok\ntest_additional_property_key_span (__main__.SourceTests.test_additional_property_key_span) ... ok\ntest_all_supported_constraints_and_multiplicity (__main__.SourceTests.test_all_supported_constraints_and_multiplicity) ... ok\ntest_all_token_types_and_exact_ranges (__main__.SourceTests.test_all_token_types_and_exact_ranges) ... ok\ntest_cli_exits_and_no_follow_boundaries (__main__.SourceTests.test_cli_exits_and_no_follow_boundaries) ... ok\ntest_empty_and_escaped_missing_names (__main__.SourceTests.test_empty_and_escaped_missing_names) ... ok\ntest_escaped_lexemes_are_not_reserialized (__main__.SourceTests.test_escaped_lexemes_are_not_reserialized) ... ok\ntest_input_identity_commits_formatting (__main__.SourceTests.test_input_identity_commits_formatting) ... ok\ntest_malformed_duplicate_nonfinite_and_encoding_refused (__main__.SourceTests.test_malformed_duplicate_nonfinite_and_encoding_refused) ... ok\ntest_many_flat_tokens (__main__.SourceTests.test_many_flat_tokens) ... ok\ntest_missing_field_and_present_null_are_distinct (__main__.SourceTests.test_missing_field_and_present_null_are_distinct) ... ok\ntest_prefix_tail_and_duplicate_locations (__main__.SourceTests.test_prefix_tail_and_duplicate_locations) ... ok\ntest_root_span_and_trailing_whitespace (__main__.SourceTests.test_root_span_and_trailing_whitespace) ... ok\ntest_unicode_crlf_tabs_and_escaped_key (__main__.SourceTests.test_unicode_crlf_tabs_and_escaped_key) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.043s\n\nOK\n"
+    },
+    {
+      "command": "python3 -B line-2/tools/json-contract/test_check.py",
+      "status": "fulfilled",
+      "exit_code": 0,
+      "output": "test_boundaries (__main__.Contracts.test_boundaries) ... ok\ntest_cli_success_and_input_error (__main__.Contracts.test_cli_success_and_input_error) ... ok\ntest_enum_boolean_not_number (__main__.Contracts.test_enum_boolean_not_number) ... ok\ntest_example_report (__main__.Contracts.test_example_report) ... ok\ntest_invalid_contracts_fail_closed (__main__.Contracts.test_invalid_contracts_fail_closed) ... ok\ntest_lengths_and_pattern (__main__.Contracts.test_lengths_and_pattern) ... ok\ntest_pointer_escaping (__main__.Contracts.test_pointer_escaping) ... ok\ntest_real_existing_record (__main__.Contracts.test_real_existing_record) ... ok\ntest_refuses_outside_and_hidden_paths (__main__.Contracts.test_refuses_outside_and_hidden_paths) ... ok\ntest_types (__main__.Contracts.test_types) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.037s\n\nOK\n"
+    },
+    {
+      "command": "python3 -B line-2/tools/ordered-deliverables/test_ordered.py",
+      "status": "fulfilled",
+      "exit_code": 0,
+      "output": "test_bad_contracts (__main__.Ordered.test_bad_contracts) ... ok\ntest_cli (__main__.Ordered.test_cli) ... ok\ntest_empty_prefix_retains_items (__main__.Ordered.test_empty_prefix_retains_items) ... ok\ntest_error_pointer (__main__.Ordered.test_error_pointer) ... ok\ntest_handoff (__main__.Ordered.test_handoff) ... ok\ntest_items_checks_only_tail (__main__.Ordered.test_items_checks_only_tail) ... ok\ntest_prefix_does_not_require_presence (__main__.Ordered.test_prefix_does_not_require_presence) ... ok\ntest_real_inherited_record (__main__.Ordered.test_real_inherited_record) ... ok\ntest_trait_value_and_order (__main__.Ordered.test_trait_value_and_order) ... ok\ntest_unconstrained_tail (__main__.Ordered.test_unconstrained_tail) ... ok\ntest_uniqueness_nested (__main__.Ordered.test_uniqueness_nested) ... ok\ntest_uniqueness_numeric_and_boolean (__main__.Ordered.test_uniqueness_numeric_and_boolean) ... ok\ntest_uniqueness_optional (__main__.Ordered.test_uniqueness_optional) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.020s\n\nOK\n"
+    },
+    {
+      "command": "python3 -B line-2/tools/bounded-contract/test_check.py",
+      "status": "fulfilled",
+      "exit_code": 0,
+      "output": "test_cli_exit_precedence_and_continuation (__main__.Boundary.test_cli_exit_precedence_and_continuation) ... ok\ntest_descriptor_keeps_original_directory (__main__.Boundary.test_descriptor_keeps_original_directory) ... ok\ntest_directory_refused (__main__.Boundary.test_directory_refused) ... ok\ntest_duplicate_nonfinite_and_utf8 (__main__.Boundary.test_duplicate_nonfinite_and_utf8) ... ok\ntest_exact_limit_and_over_limit (__main__.Boundary.test_exact_limit_and_over_limit) ... ok\ntest_fd_cleanup_on_success_and_failure (__main__.Boundary.test_fd_cleanup_on_success_and_failure) ... ok\ntest_fifo_does_not_block (__main__.Boundary.test_fifo_does_not_block) ... ok\ntest_growth_after_fstat_is_bounded (__main__.Boundary.test_growth_after_fstat_is_bounded) ... ok\ntest_invalid_contract_and_document_count (__main__.Boundary.test_invalid_contract_and_document_count) ... ok\ntest_paths_refused_without_open (__main__.Boundary.test_paths_refused_without_open) ... ok\ntest_real_records (__main__.Boundary.test_real_records) ... ok\ntest_short_reads_are_joined (__main__.Boundary.test_short_reads_are_joined) ... ok\ntest_symlink_directory_refused (__main__.Boundary.test_symlink_directory_refused) ... ok\ntest_symlink_leaf_refused (__main__.Boundary.test_symlink_leaf_refused) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.010s\n\nOK\n"
+    },
+    {
+      "command": "python3 -B line-2/tools/repair-review/test_review.py",
+      "status": "fulfilled",
+      "exit_code": 0,
+      "output": "............\n----------------------------------------------------------------------\nRan 12 tests in 0.039s\n\nOK\n"
+    },
+    {
+      "command": "python3 -B line-2/tools/rule-locator/test_explain.py",
+      "status": "fulfilled",
+      "exit_code": 0,
+      "output": "test_all_supported_scalar_and_length_rules (__main__.LocatorTests.test_all_supported_scalar_and_length_rules) ... ok\ntest_cli_codes_and_input_boundaries (__main__.LocatorTests.test_cli_codes_and_input_boundaries) ... ok\ntest_escaped_and_empty_property_names (__main__.LocatorTests.test_escaped_and_empty_property_names) ... ok\ntest_long_previews_do_not_remove_errors (__main__.LocatorTests.test_long_previews_do_not_remove_errors) ... ok\ntest_missing_null_and_unexpected (__main__.LocatorTests.test_missing_null_and_unexpected) ... ok\ntest_nested_array_and_duplicate_complex_values (__main__.LocatorTests.test_nested_array_and_duplicate_complex_values) ... ok\ntest_nested_required_rule_is_on_parent (__main__.LocatorTests.test_nested_required_rule_is_on_parent) ... ok\ntest_nested_unique_items_parent_rule (__main__.LocatorTests.test_nested_unique_items_parent_rule) ... ok\ntest_no_mutation_and_invalid_contract_refused (__main__.LocatorTests.test_no_mutation_and_invalid_contract_refused) ... ok\ntest_prefix_and_tail_have_different_rules (__main__.LocatorTests.test_prefix_and_tail_have_different_rules) ... ok\ntest_preview_controls_are_escaped (__main__.LocatorTests.test_preview_controls_are_escaped) ... ok\ntest_real_saved_swarm_contract_and_zto_policy (__main__.LocatorTests.test_real_saved_swarm_contract_and_zto_policy) ... ok\ntest_root_type_and_boolean_distinction (__main__.LocatorTests.test_root_type_and_boolean_distinction) ... ok\ntest_strict_pointer_resolution (__main__.LocatorTests.test_strict_pointer_resolution) ... ok\ntest_unconstrained_tail_and_absent_prefix (__main__.LocatorTests.test_unconstrained_tail_and_absent_prefix) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.026s\n\nOK\n"
+    }
+  ]
+}
